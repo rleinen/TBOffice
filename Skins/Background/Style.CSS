@@ -1,0 +1,149 @@
+/*
+ CSS Style for APNSoft Menu.
+ Version: Background 4.6
+ Created: 11/12/2010
+ Updated: 09/16/2011
+ Copyright (C) APNSoft. All rights reserved.
+ http://www.apnsoft.com
+
+ Free for commercial and non-commercial use.
+ You can distribute and modify it freely.
+*/
+
+
+/*=====================Global=======================*/
+
+/*Icon: TD, Title: TD, Arrow: TD*/
+.IconTD, .TitleTD, .ArrowTD
+{
+	font-size:11px;
+	font-family:Tahoma,Verdana;
+	font-weight:bold;
+	white-space:nowrap;
+}
+
+
+/*=====================Main Menu=======================*/
+
+/*Main Menu: DIV*/
+.MainMenuDIV
+{
+	padding:2px;
+	border:outset 2px #efefef;
+	background:#CDCDCD url($SkinFolder$Background.jpg);
+	cursor:default;
+}
+
+/*Main Menu: Item TD*/
+.MainMenuItemTD
+{
+	padding:4px;
+	padding-left:6px;
+	padding-right:6px;
+}
+
+/*Main Menu: Item TD (Hovered)*/
+.MainMenuItemHoveredTD
+{
+	padding:3px;
+	padding-left:5px;
+	padding-right:5px;
+	border:solid 1px White;
+	border-right:solid 1px Gray;
+	border-bottom:solid 1px Gray;
+	background:#868686 url($SkinFolder$ItemHoveredBackground.jpg);
+	color:White;
+}
+
+/*Main Menu: Item TD (Selected)*/
+.MainMenuItemSelectedTD
+{
+	padding:3px;
+	padding-left:5px;
+	padding-right:5px;
+	border:solid 1px #4E4E4E;
+	border-right:solid 1px White;
+	border-bottom:solid 1px White;
+	background:#AAAAAA url($SkinFolder$ItemSelectedBackground.jpg);
+}
+
+
+/*=====================SubMenu=======================*/
+
+/*Submenu: DIV*/
+.SubMenuDIV
+{
+	padding:3px;
+	background-color:Silver;
+	border:outset 2px #efefef;
+	background:#CDCDCD url($SkinFolder$Background.jpg);
+	cursor:default;
+}
+
+/*Submenu: Item TD*/
+.SubMenuItemTD
+{
+	padding:4px;
+	padding-left:6px;
+	padding-right:6px;
+}
+
+/*Submenu: Item TD (Hovered)*/
+.SubMenuItemHoveredTD
+{
+	padding:3px;
+	padding-left:5px;
+	padding-right:5px;
+	border:solid 1px White;
+	border-right:solid 1px Gray;
+	border-bottom:solid 1px Gray;
+	background:#868686 url($SkinFolder$ItemHoveredBackground.jpg);
+	color:White;
+}
+
+/*Submenu: Item TD (Selected)*/
+.SubMenuItemSelectedTD
+{
+	padding:3px;
+	padding-left:5px;
+	padding-right:5px;
+	border:solid 1px #4E4E4E;
+	border-right:solid 1px White;
+	border-bottom:solid 1px White;
+	background:#AAAAAA url($SkinFolder$ItemSelectedBackground.jpg);
+}
+
+
+/*=====================Additional classes=======================*/
+
+/*Separators: TD*/
+.SeparatorVerticalTD, .SeparatorHorizontalTD
+{
+	padding:0px;
+	border-left: solid 1px gray;
+	border-top: solid 1px gray;
+	background-color:#efefef;
+}
+
+/*Tooltip: DIV*/
+.TooltipDIV
+{
+	font-family:Tahoma,Arial;
+	font-size:11px;
+	background-color:#FFFFE1;
+	border:solid 1px black;
+	padding:1px;
+	padding-left:3px;
+}
+
+/*Scroll Bar*/
+.ScrollBar
+{
+	scrollbar-arrow-color:#3F3F3F;
+	scrollbar-base-color:silver;
+	scrollbar-shadow-color:silver;
+	scrollbar-darkshadow-color:gray;
+	scrollbar-highlight-color:silver;
+	scrollbar-3dlight-color:#efefef;
+	scrollbar-track-color:#D8D8D8;
+}

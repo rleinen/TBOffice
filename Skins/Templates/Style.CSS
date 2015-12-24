@@ -1,0 +1,147 @@
+/*
+ CSS Style for APNSoft Menu.
+ Version: Templates 4.2
+ Created: 04/11/2011
+ Updated: 10/13/2011
+ Copyright (C) APNSoft. All rights reserved.
+ http://www.apnsoft.com
+
+ Free for commercial and non-commercial use.
+ You can distribute and modify it freely.
+*/
+
+
+/*=====================Global=======================*/
+
+/*Icon: TD, Title: TD, Arrow: TD*/
+.IconTD, .TitleTD, .ArrowTD
+{
+	font-size:11px;
+	font-family:Arial,Verdana;
+	white-space:nowrap;
+}
+
+
+/*=====================Main Menu=======================*/
+
+/*Main Menu: DIV*/
+.MainMenuDIV
+{
+	padding:3px;
+	background-color:#E9E9E9;
+	border:solid 1px #BEBEBE;
+	cursor:default;
+}
+
+/*Main Menu: Item TD*/
+.MainMenuItemTD
+{
+	padding:4px;
+	padding-left:16px;
+	padding-right:16px;
+}
+
+/*Main Menu: Item TD (Hovered)*/
+.MainMenuItemHoveredTD
+{
+	padding:4px;
+	padding-left:16px;
+	padding-right:16px;
+	background-color:#F7F7F7;
+}
+
+/*Main Menu: Item TD (Selected)*/
+.MainMenuItemSelectedTD
+{
+	padding:4px;
+	padding-left:16px;
+	padding-right:16px;
+	background-color:#E4E4E4;
+}
+
+
+/*=====================SubMenu=======================*/
+
+/*Submenu: DIV*/
+.SubMenuDIV
+{
+	padding:3px;
+	background-color:#E9E9E9;
+	border:solid 1px #BEBEBE;
+	cursor:default;
+	
+	/*Shadow*/
+	-moz-box-shadow: 2px 2px 3px #666666; 
+	-webkit-box-shadow: 2px 2px 3px #666666; 
+	box-shadow: 2px 2px 3px #666666; 
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#666666')";
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#666666');
+}
+
+/*Submenu: Item TD*/
+.SubMenuItemTD
+{
+	padding:8px;
+	padding-left:16px;
+	padding-right:16px;
+}
+
+/*Submenu: Item TD (Hovered)*/
+.SubMenuItemHoveredTD
+{
+	padding:8px;
+	padding-left:16px;
+	padding-right:16px;
+	background-color:#F7F7F7;
+}
+
+/*Submenu: Item TD (Selected)*/
+.SubMenuItemSelectedTD
+{
+	padding:8px;
+	padding-left:16px;
+	padding-right:16px;
+	background-color:#E4E4E4;
+}
+
+
+/*=====================Additional classes=======================*/
+
+/*Vertical separator: TD*/
+.SeparatorVerticalTD
+{
+	padding:0px;
+	border-left: solid 1px silver;
+}
+
+/*Horizontal separator: TD*/
+.SeparatorHorizontalTD
+{
+	padding:0px;
+	border-top: solid 1px silver;
+}
+
+/*Tooltip: DIV*/
+.TooltipDIV
+{
+	font-family:Tahoma,Arial;
+	font-size:11px;
+	color:Gray;
+	background-color:white;
+	border:solid 1px Gray;
+	padding:1px;
+	padding-left:3px;
+}
+
+/*Scroll Bar*/
+.ScrollBar
+{
+	scrollbar-base-color:#E2E2E2;
+	scrollbar-arrow-color:#000000;
+	scrollbar-3dlight-color:#B5B5B5;
+	scrollbar-darkshadow-color:#B5B5B5;
+	scrollbar-face-color:#E2E2E2;
+	scrollbar-highlight-color:#FFFFFF;
+	scrollbar-shadow-color:#E2E2E2;
+	scrollbar-track-color:#B5B5B5;
+}

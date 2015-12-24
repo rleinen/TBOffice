@@ -1,0 +1,739 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TBOffice.Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AspApplication">
+    <Key>
+      <PropertyRef Name="ApplicationId" />
+    </Key>
+    <Property Name="ApplicationName" Type="String" MaxLength="235" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspMemberships" Relationship="Self.MembershipApplication" FromRole="Applications" ToRole="Memberships" />
+    <NavigationProperty Name="AspRoles" Relationship="Self.RoleApplication" FromRole="Applications" ToRole="Roles" />
+    <NavigationProperty Name="AspUsers" Relationship="Self.UserApplication" FromRole="Applications" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="AspMembership">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PasswordFormat" Type="Int32" Nullable="false" />
+    <Property Name="PasswordSalt" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="PasswordQuestion" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="PasswordAnswer" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="IsApproved" Type="Boolean" Nullable="false" />
+    <Property Name="IsLockedOut" Type="Boolean" Nullable="false" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="LastLoginDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="LastPasswordChangedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="LastLockoutDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FailedPasswordAttemptCount" Type="Int32" Nullable="false" />
+    <Property Name="FailedPasswordAttemptWindowStart" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FailedPasswordAnswerAttemptCount" Type="Int32" Nullable="false" />
+    <Property Name="FailedPasswordAnswerAttemptWindowsStart" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Comment" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspApplication" Relationship="Self.MembershipApplication" FromRole="Memberships" ToRole="Applications" />
+    <NavigationProperty Name="AspUser" Relationship="Self.MembershipUser" FromRole="Memberships" ToRole="Users" />
+    <NavigationProperty Name="TBUsers" Relationship="TBOffice.Model.FK_secUsers_Memberships" FromRole="AspMembership" ToRole="TBUser" />
+  </EntityType>
+  <EntityType Name="AspProfile">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <Property Name="PropertyNames" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PropertyValueStrings" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PropertyValueBinary" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+    <Property Name="LastUpdatedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="User" Relationship="Self.UserProfile" FromRole="Profiles" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="AspRole">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+    <Property Name="RoleId" Type="Guid" Nullable="false" />
+    <Property Name="RoleName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspApplication" Relationship="Self.RoleApplication" FromRole="Roles" ToRole="Applications" />
+  </EntityType>
+  <EntityType Name="Menu">
+    <Key>
+      <PropertyRef Name="MenuID" />
+    </Key>
+    <Property Name="MenuID" Type="Int32" Nullable="false" />
+    <Property Name="ParentMenuID" Type="Int32" />
+    <Property Name="ShortDesc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NavigateUrl" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ImageUrl" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Target" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Enabled" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Roles" Relationship="Self.secMenuRoles" FromRole="secMenu" ToRole="secRoles" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Name="RoleID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoleName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Menus" Relationship="Self.secMenuRoles" FromRole="secRoles" ToRole="secMenu" />
+    <NavigationProperty Name="TBUsers" Relationship="TBOffice.Model.secUserRoles" FromRole="Role" ToRole="TBUser" />
+  </EntityType>
+  <EntityType Name="TBUser">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AspUserID" Type="Guid" />
+    <Property Name="UserName" Type="String" MaxLength="25" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FirstName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="DisplayName" Type="String" MaxLength="41" FixedLength="false" Unicode="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="IsEmployee" Type="Boolean" Nullable="false" />
+    <Property Name="IsFullTime" Type="Boolean" />
+    <Property Name="IsExempt" Type="Boolean" />
+    <Property Name="EETypeID" Type="Int32" />
+    <Property Name="EECategoryID" Type="Int32" />
+    <Property Name="StartDate" Type="DateTime" Precision="0" />
+    <Property Name="TermDate" Type="DateTime" Precision="0" />
+    <Property Name="MinHours" Type="Byte" Nullable="false" />
+    <Property Name="MaxHours" Type="Byte" Nullable="false" />
+    <Property Name="RowVersion" Type="Binary" MaxLength="8" FixedLength="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="EECategory" Relationship="Self.FK_secUsers_tblEECategory" FromRole="secUsers" ToRole="tblEECategory" />
+    <NavigationProperty Name="EEType" Relationship="Self.FK_secUsers_tblEEType" FromRole="secUsers" ToRole="tblEEType" />
+    <NavigationProperty Name="AspUser" Relationship="Self.FK_secUsers_Users" FromRole="secUsers" ToRole="Users" />
+    <NavigationProperty Name="EECompensationHistory" Relationship="Self.FK_tblEECompensation_secUsers" FromRole="secUsers" ToRole="tblEECompensation" />
+    <NavigationProperty Name="TORequests" Relationship="Self.FK_tblTORequest_secUsers" FromRole="secUsers" ToRole="tblTORequest" />
+    <NavigationProperty Name="TORequestsApprovedByUser" Relationship="Self.FK_tblTORequest_secUsers1" FromRole="secUsers" ToRole="tblTORequest" />
+    <NavigationProperty Name="TSEntries" Relationship="Self.FK_tblTSEntry_secUsers" FromRole="secUsers" ToRole="tblTSEntry" />
+    <NavigationProperty Name="TSWeeks" Relationship="Self.FK_tblTSWeek_secUsers" FromRole="secUsers" ToRole="tblTSWeek" />
+    <NavigationProperty Name="AspMembership" Relationship="TBOffice.Model.FK_secUsers_Memberships" FromRole="TBUser" ToRole="AspMembership" />
+    <NavigationProperty Name="Roles" Relationship="TBOffice.Model.secUserRoles" FromRole="TBUser" ToRole="Role" />
+  </EntityType>
+  <EntityType Name="Congregation">
+    <Key>
+      <PropertyRef Name="CongregationID" />
+    </Key>
+    <Property Name="CongregationID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CongregationDesc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Services" Relationship="Self.tblServices_tblCongregationstblServices" FromRole="tblCongregations" ToRole="tblServices" />
+  </EntityType>
+  <EntityType Name="DateList">
+    <Key>
+      <PropertyRef Name="DateID" />
+    </Key>
+    <Property Name="DateID" Type="DateTime" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="EECategory">
+    <Key>
+      <PropertyRef Name="EECategoryID" />
+    </Key>
+    <Property Name="EECategoryID" Type="Int32" Nullable="false" />
+    <Property Name="ShortDesc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TBUsers" Relationship="Self.FK_secUsers_tblEECategory" FromRole="tblEECategory" ToRole="secUsers" />
+  </EntityType>
+  <EntityType Name="EECompensation">
+    <Key>
+      <PropertyRef Name="CompID" />
+    </Key>
+    <Property Name="CompID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompUserID" Type="Int32" Nullable="false" />
+    <Property Name="FiscalYear" Type="Int32" Nullable="false" />
+    <Property Name="IsExempt" Type="Boolean" Nullable="false" />
+    <Property Name="Salary" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="Housing" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="HourlyRate" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="VacationAllotment" Type="Byte" Nullable="false" />
+    <Property Name="IllnessAllotment" Type="Byte" Nullable="false" />
+    <Property Name="RowVersion" Type="Binary" MaxLength="8" FixedLength="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="TBUser" Relationship="Self.FK_tblEECompensation_secUsers" FromRole="tblEECompensation" ToRole="secUsers" />
+  </EntityType>
+  <EntityType Name="EEType">
+    <Key>
+      <PropertyRef Name="EETypeID" />
+    </Key>
+    <Property Name="EETypeID" Type="Int32" Nullable="false" />
+    <Property Name="ShortDesc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TBUsers" Relationship="Self.FK_secUsers_tblEEType" FromRole="tblEEType" ToRole="secUsers" />
+  </EntityType>
+  <EntityType Name="Offering">
+    <Key>
+      <PropertyRef Name="OfferingID" />
+    </Key>
+    <Property Name="OfferingID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SundayID" Type="Int32" />
+    <Property Name="ServiceID" Type="Int32" />
+    <Property Name="GeneralAmt" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="BenevolentAmt" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="MissionsAmt" Type="Decimal" Precision="19" Scale="4" />
+    <NavigationProperty Name="Service" Relationship="TBOffice.Model.FK_tblOfferings_tblServices" FromRole="tblOffering" ToRole="tblService" />
+    <NavigationProperty Name="Sunday" Relationship="TBOffice.Model.FK_tblOfferings_tblSundays" FromRole="tblOffering" ToRole="tblSunday" />
+  </EntityType>
+  <EntityType Name="AttendanceCount">
+    <Key>
+      <PropertyRef Name="ServiceAttendanceID" />
+    </Key>
+    <Property Name="ServiceAttendanceID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SundayID" Type="Int32" />
+    <Property Name="ServiceID" Type="Int32" />
+    <Property Name="HeadCount" Type="Int16" />
+    <Property Name="CardCount" Type="Int16" />
+    <Property Name="CardPct" Type="Double" />
+    <Property Name="AdultSSCount" Type="Int16" />
+    <Property Name="ChildSSCount" Type="Int16" />
+    <Property Name="YouthSSCount" Type="Int16" />
+    <Property Name="ParkingCount" Type="Int16" />
+    <Property Name="SSMA_TimeStamp" Type="Binary" MaxLength="8" FixedLength="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="Service" Relationship="TBOffice.Model.FK_tblServiceAttendance_tblServices" FromRole="tblServiceAttendance" ToRole="tblService" />
+    <NavigationProperty Name="Sunday" Relationship="TBOffice.Model.FK_tblServiceAttendance_tblSundays" FromRole="tblServiceAttendance" ToRole="tblSunday" />
+  </EntityType>
+  <EntityType Name="Service">
+    <Key>
+      <PropertyRef Name="ServiceID" />
+    </Key>
+    <Property Name="ServiceID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CongregationID" Type="Int32" />
+    <Property Name="ServiceCode" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Congregation" Relationship="Self.tblServices_tblCongregationstblServices" FromRole="tblServices" ToRole="tblCongregations" />
+    <NavigationProperty Name="Offerings" Relationship="TBOffice.Model.FK_tblOfferings_tblServices" FromRole="tblService" ToRole="tblOffering" />
+    <NavigationProperty Name="AttendanceCounts" Relationship="TBOffice.Model.FK_tblServiceAttendance_tblServices" FromRole="tblService" ToRole="tblServiceAttendance" />
+  </EntityType>
+  <EntityType Name="Sunday">
+    <Key>
+      <PropertyRef Name="SundayID" />
+    </Key>
+    <Property Name="SundayID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SunDate" Type="DateTime" Precision="0" />
+    <Property Name="SunMonth" Type="Int16" />
+    <Property Name="SunYear" Type="Int16" />
+    <Property Name="FiscalYear" Type="Int32" />
+    <Property Name="WeekOfYear" Type="Int16" />
+    <Property Name="WeekOfFiscalYear" Type="Int16" />
+    <Property Name="WeekOfMonth" Type="Int16" />
+    <NavigationProperty Name="Offerings" Relationship="TBOffice.Model.FK_tblOfferings_tblSundays" FromRole="tblSunday" ToRole="tblOffering" />
+    <NavigationProperty Name="AttendanceCounts" Relationship="TBOffice.Model.FK_tblServiceAttendance_tblSundays" FromRole="tblSunday" ToRole="tblServiceAttendance" />
+  </EntityType>
+  <EntityType Name="TORequest">
+    <Key>
+      <PropertyRef Name="TORequestID" />
+    </Key>
+    <Property Name="TORequestID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TODate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="TOUserID" Type="Int32" Nullable="false" />
+    <Property Name="RequestDT" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ApprovalDT" Type="DateTime" Precision="3" />
+    <Property Name="ApprovalUserID" Type="Int32" />
+    <Property Name="Comment" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="RowVersion" Type="Binary" MaxLength="8" FixedLength="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="TORequestUser" Relationship="Self.FK_tblTORequest_secUsers" FromRole="tblTORequest" ToRole="secUsers" />
+    <NavigationProperty Name="ApprovalUser" Relationship="Self.FK_tblTORequest_secUsers1" FromRole="tblTORequest" ToRole="secUsers" />
+  </EntityType>
+  <EntityType Name="TSEntry">
+    <Key>
+      <PropertyRef Name="TSEntryID" />
+    </Key>
+    <Property Name="TSEntryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="TSDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="WorkHours" Type="Decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="VacationHours" Type="Decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="SickHours" Type="Decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="HolidayHours" Type="Decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="TotalHours" Type="Decimal" Precision="8" Scale="2" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="IsAdjustment" Type="Boolean" Nullable="false" />
+    <Property Name="RowVersion" Type="Binary" MaxLength="8" FixedLength="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="Notes" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TBUser" Relationship="Self.FK_tblTSEntry_secUsers" FromRole="tblTSEntry" ToRole="secUsers" />
+  </EntityType>
+  <EntityType Name="TSWeek">
+    <Key>
+      <PropertyRef Name="TSWeekID" />
+    </Key>
+    <Property Name="TSWeekID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="WeekID" Type="Int32" Nullable="false" />
+    <Property Name="WorkHours" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="VacationHours" Type="Decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="SickHours" Type="Decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="HolidayHours" Type="Decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="TotalHours" Type="Decimal" Precision="8" Scale="2" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="BalanceHours" Type="Decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="RowVersion" Type="Binary" MaxLength="8" FixedLength="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="TBUser" Relationship="Self.FK_tblTSWeek_secUsers" FromRole="tblTSWeek" ToRole="secUsers" />
+    <NavigationProperty Name="Week" Relationship="Self.FK_tblTSWeek_tblWeeks" FromRole="tblTSWeek" ToRole="tblWeeks" />
+  </EntityType>
+  <EntityType Name="Week">
+    <Key>
+      <PropertyRef Name="WeekID" />
+    </Key>
+    <Property Name="WeekID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="WeekNum" Type="Byte" Nullable="false" />
+    <Property Name="YearNum" Type="Int32" Nullable="false" />
+    <Property Name="BegDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="EndDate" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="TSWeeks" Relationship="Self.FK_tblTSWeek_tblWeeks" FromRole="tblWeeks" ToRole="tblTSWeek" />
+  </EntityType>
+  <EntityType Name="AspUser">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IsAnonymous" Type="Boolean" Nullable="false" />
+    <Property Name="LastActivityDate" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="AspApplication" Relationship="Self.UserApplication" FromRole="Users" ToRole="Applications" />
+    <NavigationProperty Name="AspMembership" Relationship="Self.MembershipUser" FromRole="Users" ToRole="Memberships" />
+    <NavigationProperty Name="AspProfile" Relationship="Self.UserProfile" FromRole="Users" ToRole="Profiles" />
+    <NavigationProperty Name="TBUsers" Relationship="Self.FK_secUsers_Users" FromRole="Users" ToRole="secUsers" />
+  </EntityType>
+  <Association Name="MembershipApplication">
+    <End Role="Applications" Type="TBOffice.Model.AspApplication" Multiplicity="1" />
+    <End Role="Memberships" Type="TBOffice.Model.AspMembership" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Applications">
+        <PropertyRef Name="ApplicationId" />
+      </Principal>
+      <Dependent Role="Memberships">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RoleApplication">
+    <End Role="Applications" Type="TBOffice.Model.AspApplication" Multiplicity="1" />
+    <End Role="Roles" Type="TBOffice.Model.AspRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Applications">
+        <PropertyRef Name="ApplicationId" />
+      </Principal>
+      <Dependent Role="Roles">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UserApplication">
+    <End Role="Applications" Type="TBOffice.Model.AspApplication" Multiplicity="1" />
+    <End Role="Users" Type="TBOffice.Model.AspUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Applications">
+        <PropertyRef Name="ApplicationId" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MembershipUser">
+    <End Role="Users" Type="TBOffice.Model.AspUser" Multiplicity="1" />
+    <End Role="Memberships" Type="TBOffice.Model.AspMembership" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Memberships">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UserProfile">
+    <End Role="Users" Type="TBOffice.Model.AspUser" Multiplicity="1" />
+    <End Role="Profiles" Type="TBOffice.Model.AspProfile" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Profiles">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_secUsers_tblEECategory">
+    <End Role="tblEECategory" Type="TBOffice.Model.EECategory" Multiplicity="0..1" />
+    <End Role="secUsers" Type="TBOffice.Model.TBUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEECategory">
+        <PropertyRef Name="EECategoryID" />
+      </Principal>
+      <Dependent Role="secUsers">
+        <PropertyRef Name="EECategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_secUsers_tblEEType">
+    <End Role="tblEEType" Type="TBOffice.Model.EEType" Multiplicity="0..1" />
+    <End Role="secUsers" Type="TBOffice.Model.TBUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEEType">
+        <PropertyRef Name="EETypeID" />
+      </Principal>
+      <Dependent Role="secUsers">
+        <PropertyRef Name="EETypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_secUsers_Users">
+    <End Role="Users" Type="TBOffice.Model.AspUser" Multiplicity="0..1" />
+    <End Role="secUsers" Type="TBOffice.Model.TBUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="secUsers">
+        <PropertyRef Name="AspUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEECompensation_secUsers">
+    <End Role="secUsers" Type="TBOffice.Model.TBUser" Multiplicity="1" />
+    <End Role="tblEECompensation" Type="TBOffice.Model.EECompensation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="secUsers">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="tblEECompensation">
+        <PropertyRef Name="CompUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTORequest_secUsers">
+    <End Role="secUsers" Type="TBOffice.Model.TBUser" Multiplicity="1" />
+    <End Role="tblTORequest" Type="TBOffice.Model.TORequest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="secUsers">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="tblTORequest">
+        <PropertyRef Name="TOUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTORequest_secUsers1">
+    <End Role="secUsers" Type="TBOffice.Model.TBUser" Multiplicity="0..1" />
+    <End Role="tblTORequest" Type="TBOffice.Model.TORequest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="secUsers">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="tblTORequest">
+        <PropertyRef Name="ApprovalUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTSEntry_secUsers">
+    <End Role="secUsers" Type="TBOffice.Model.TBUser" Multiplicity="1" />
+    <End Role="tblTSEntry" Type="TBOffice.Model.TSEntry" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="secUsers">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="tblTSEntry">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTSWeek_secUsers">
+    <End Role="secUsers" Type="TBOffice.Model.TBUser" Multiplicity="1" />
+    <End Role="tblTSWeek" Type="TBOffice.Model.TSWeek" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="secUsers">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="tblTSWeek">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="tblServices_tblCongregationstblServices">
+    <End Role="tblCongregations" Type="TBOffice.Model.Congregation" Multiplicity="0..1" />
+    <End Role="tblServices" Type="TBOffice.Model.Service" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCongregations">
+        <PropertyRef Name="CongregationID" />
+      </Principal>
+      <Dependent Role="tblServices">
+        <PropertyRef Name="CongregationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTSWeek_tblWeeks">
+    <End Role="tblWeeks" Type="TBOffice.Model.Week" Multiplicity="1" />
+    <End Role="tblTSWeek" Type="TBOffice.Model.TSWeek" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblWeeks">
+        <PropertyRef Name="WeekID" />
+      </Principal>
+      <Dependent Role="tblTSWeek">
+        <PropertyRef Name="WeekID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="secMenuRoles">
+    <End Role="secMenu" Type="TBOffice.Model.Menu" Multiplicity="*" />
+    <End Role="secRoles" Type="TBOffice.Model.Role" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="TBBFEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AspApplications" EntityType="TBOffice.Model.AspApplication" />
+    <EntitySet Name="AspMemberships" EntityType="TBOffice.Model.AspMembership" />
+    <EntitySet Name="AspProfiles" EntityType="TBOffice.Model.AspProfile" />
+    <EntitySet Name="AspRoles" EntityType="TBOffice.Model.AspRole" />
+    <EntitySet Name="Menus" EntityType="TBOffice.Model.Menu" />
+    <EntitySet Name="Roles" EntityType="TBOffice.Model.Role" />
+    <EntitySet Name="TBUsers" EntityType="TBOffice.Model.TBUser" />
+    <EntitySet Name="Congregations" EntityType="TBOffice.Model.Congregation" />
+    <EntitySet Name="DateLists" EntityType="TBOffice.Model.DateList" />
+    <EntitySet Name="EECategories" EntityType="TBOffice.Model.EECategory" />
+    <EntitySet Name="EECompensations" EntityType="TBOffice.Model.EECompensation" />
+    <EntitySet Name="EETypes" EntityType="TBOffice.Model.EEType" />
+    <EntitySet Name="Offerings" EntityType="TBOffice.Model.Offering" />
+    <EntitySet Name="AttendanceCounts" EntityType="TBOffice.Model.AttendanceCount" />
+    <EntitySet Name="Services" EntityType="TBOffice.Model.Service" />
+    <EntitySet Name="Sundays" EntityType="TBOffice.Model.Sunday" />
+    <EntitySet Name="TORequests" EntityType="TBOffice.Model.TORequest" />
+    <EntitySet Name="TSEntries" EntityType="TBOffice.Model.TSEntry" />
+    <EntitySet Name="TSWeeks" EntityType="TBOffice.Model.TSWeek" />
+    <EntitySet Name="Weeks" EntityType="TBOffice.Model.Week" />
+    <EntitySet Name="AspUsers" EntityType="TBOffice.Model.AspUser" />
+    <AssociationSet Name="MembershipApplication" Association="Self.MembershipApplication">
+      <End Role="Applications" EntitySet="AspApplications" />
+      <End Role="Memberships" EntitySet="AspMemberships" />
+    </AssociationSet>
+    <AssociationSet Name="RoleApplication" Association="Self.RoleApplication">
+      <End Role="Applications" EntitySet="AspApplications" />
+      <End Role="Roles" EntitySet="AspRoles" />
+    </AssociationSet>
+    <AssociationSet Name="UserApplication" Association="Self.UserApplication">
+      <End Role="Applications" EntitySet="AspApplications" />
+      <End Role="Users" EntitySet="AspUsers" />
+    </AssociationSet>
+    <AssociationSet Name="MembershipUser" Association="Self.MembershipUser">
+      <End Role="Users" EntitySet="AspUsers" />
+      <End Role="Memberships" EntitySet="AspMemberships" />
+    </AssociationSet>
+    <AssociationSet Name="UserProfile" Association="Self.UserProfile">
+      <End Role="Users" EntitySet="AspUsers" />
+      <End Role="Profiles" EntitySet="AspProfiles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_secUsers_tblEECategory" Association="Self.FK_secUsers_tblEECategory">
+      <End Role="tblEECategory" EntitySet="EECategories" />
+      <End Role="secUsers" EntitySet="TBUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_secUsers_tblEEType" Association="Self.FK_secUsers_tblEEType">
+      <End Role="tblEEType" EntitySet="EETypes" />
+      <End Role="secUsers" EntitySet="TBUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_secUsers_Users" Association="Self.FK_secUsers_Users">
+      <End Role="Users" EntitySet="AspUsers" />
+      <End Role="secUsers" EntitySet="TBUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEECompensation_secUsers" Association="Self.FK_tblEECompensation_secUsers">
+      <End Role="secUsers" EntitySet="TBUsers" />
+      <End Role="tblEECompensation" EntitySet="EECompensations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTORequest_secUsers" Association="Self.FK_tblTORequest_secUsers">
+      <End Role="secUsers" EntitySet="TBUsers" />
+      <End Role="tblTORequest" EntitySet="TORequests" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTORequest_secUsers1" Association="Self.FK_tblTORequest_secUsers1">
+      <End Role="secUsers" EntitySet="TBUsers" />
+      <End Role="tblTORequest" EntitySet="TORequests" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTSEntry_secUsers" Association="Self.FK_tblTSEntry_secUsers">
+      <End Role="secUsers" EntitySet="TBUsers" />
+      <End Role="tblTSEntry" EntitySet="TSEntries" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTSWeek_secUsers" Association="Self.FK_tblTSWeek_secUsers">
+      <End Role="secUsers" EntitySet="TBUsers" />
+      <End Role="tblTSWeek" EntitySet="TSWeeks" />
+    </AssociationSet>
+    <AssociationSet Name="tblServices_tblCongregationstblServices" Association="Self.tblServices_tblCongregationstblServices">
+      <End Role="tblCongregations" EntitySet="Congregations" />
+      <End Role="tblServices" EntitySet="Services" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTSWeek_tblWeeks" Association="Self.FK_tblTSWeek_tblWeeks">
+      <End Role="tblWeeks" EntitySet="Weeks" />
+      <End Role="tblTSWeek" EntitySet="TSWeeks" />
+    </AssociationSet>
+    <AssociationSet Name="secMenuRoles" Association="Self.secMenuRoles">
+      <End Role="secMenu" EntitySet="Menus" />
+      <End Role="secRoles" EntitySet="Roles" />
+    </AssociationSet>
+    <FunctionImport Name="add_tblDates" ReturnType="Collection(String)">
+      <Parameter Name="dt" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="approve_tblTORequest">
+      <Parameter Name="UserID" Mode="In" Type="Int32" />
+      <Parameter Name="TORequestID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="chk_UserTSEntries">
+      <Parameter Name="UserID" Mode="In" Type="Int32" />
+      <Parameter Name="WeekID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="del_tblTORequest">
+      <Parameter Name="TORequestID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="get_EE_Balances" ReturnType="Collection(TBOffice.Model.get_EE_Balances_Result)">
+      <Parameter Name="UserID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="get_TimesheetEntries" ReturnType="Collection(TBOffice.Model.get_TimesheetEntries_Result)">
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="WeekId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="ins_tblTORequest">
+      <Parameter Name="TOUserID" Mode="In" Type="Int32" />
+      <Parameter Name="TODate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="ins_tblTSEntry">
+      <Parameter Name="UserID" Mode="In" Type="Int32" />
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="ins_tblTSWeek">
+      <Parameter Name="UserID" Mode="In" Type="Int32" />
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="usp_tblTSEntryUpdate" ReturnType="Collection(TBOffice.Model.usp_tblTSEntryUpdate_Result)">
+      <Parameter Name="TSEntryID" Mode="In" Type="Int32" />
+      <Parameter Name="UserID" Mode="In" Type="Int32" />
+      <Parameter Name="TSDate" Mode="In" Type="DateTime" />
+      <Parameter Name="WorkHours" Mode="In" Type="Decimal" />
+      <Parameter Name="VacationHours" Mode="In" Type="Decimal" />
+      <Parameter Name="SickHours" Mode="In" Type="Decimal" />
+      <Parameter Name="HolidayHours" Mode="In" Type="Decimal" />
+      <Parameter Name="TotalHours" Mode="In" Type="Decimal" />
+      <Parameter Name="IsAdjustment" Mode="In" Type="Boolean" />
+      <Parameter Name="Notes" Mode="In" Type="String" />
+    </FunctionImport>
+    <AssociationSet Name="FK_tblOfferings_tblServices" Association="TBOffice.Model.FK_tblOfferings_tblServices">
+      <End Role="tblService" EntitySet="Services" />
+      <End Role="tblOffering" EntitySet="Offerings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblOfferings_tblSundays" Association="TBOffice.Model.FK_tblOfferings_tblSundays">
+      <End Role="tblSunday" EntitySet="Sundays" />
+      <End Role="tblOffering" EntitySet="Offerings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblServiceAttendance_tblServices" Association="TBOffice.Model.FK_tblServiceAttendance_tblServices">
+      <End Role="tblService" EntitySet="Services" />
+      <End Role="tblServiceAttendance" EntitySet="AttendanceCounts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblServiceAttendance_tblSundays" Association="TBOffice.Model.FK_tblServiceAttendance_tblSundays">
+      <End Role="tblSunday" EntitySet="Sundays" />
+      <End Role="tblServiceAttendance" EntitySet="AttendanceCounts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_secUsers_Memberships" Association="TBOffice.Model.FK_secUsers_Memberships">
+      <End Role="AspMembership" EntitySet="AspMemberships" />
+      <End Role="TBUser" EntitySet="TBUsers" />
+    </AssociationSet>
+    <AssociationSet Name="secUserRoles" Association="TBOffice.Model.secUserRoles">
+      <End Role="Role" EntitySet="Roles" />
+      <End Role="TBUser" EntitySet="TBUsers" />
+    </AssociationSet>
+    <FunctionImport Name="get_MenusByUser" ReturnType="Collection(TBOffice.Model.fxMenu)">
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="get_EE_Balances_Result">
+    <Property Type="Int32" Name="VacBalance" Nullable="true" />
+    <Property Type="Int32" Name="SickBalance" Nullable="true" />
+    <Property Type="Decimal" Name="WorkBalance" Nullable="true" Precision="5" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="get_TimesheetEntries_Result">
+    <Property Type="Int32" Name="TSEntryID" Nullable="false" />
+    <Property Type="Int32" Name="UserID" Nullable="false" />
+    <Property Type="DateTime" Name="TSDate" Nullable="false" />
+    <Property Type="Decimal" Name="WorkHours" Nullable="false" Precision="5" Scale="2" />
+    <Property Type="Decimal" Name="VacationHours" Nullable="false" Precision="5" Scale="2" />
+    <Property Type="Decimal" Name="SickHours" Nullable="false" Precision="5" Scale="2" />
+    <Property Type="Decimal" Name="HolidayHours" Nullable="false" Precision="5" Scale="2" />
+    <Property Type="Decimal" Name="TotalHours" Nullable="true" Precision="8" Scale="2" />
+    <Property Type="String" Name="Notes" Nullable="true" MaxLength="255" />
+  </ComplexType>
+  <ComplexType Name="usp_tblTSEntryUpdate_Result">
+    <Property Type="Int32" Name="TSEntryID" Nullable="false" />
+    <Property Type="Int32" Name="UserID" Nullable="false" />
+    <Property Type="DateTime" Name="TSDate" Nullable="false" />
+    <Property Type="Decimal" Name="WorkHours" Nullable="false" Precision="5" Scale="2" />
+    <Property Type="Decimal" Name="VacationHours" Nullable="false" Precision="5" Scale="2" />
+    <Property Type="Decimal" Name="SickHours" Nullable="false" Precision="5" Scale="2" />
+    <Property Type="Decimal" Name="HolidayHours" Nullable="false" Precision="5" Scale="2" />
+    <Property Type="Decimal" Name="TotalHours" Nullable="true" Precision="8" Scale="2" />
+    <Property Type="Boolean" Name="IsAdjustment" Nullable="false" />
+    <Property Type="Binary" Name="RowVersion" Nullable="false" MaxLength="8" />
+    <Property Type="String" Name="Notes" Nullable="true" MaxLength="255" />
+  </ComplexType>
+  <Association Name="FK_tblOfferings_tblServices">
+    <End Type="TBOffice.Model.Service" Role="tblService" Multiplicity="0..1" />
+    <End Type="TBOffice.Model.Offering" Role="tblOffering" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblService">
+        <PropertyRef Name="ServiceID" />
+      </Principal>
+      <Dependent Role="tblOffering">
+        <PropertyRef Name="ServiceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblOfferings_tblSundays">
+    <End Type="TBOffice.Model.Sunday" Role="tblSunday" Multiplicity="0..1" />
+    <End Type="TBOffice.Model.Offering" Role="tblOffering" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblSunday">
+        <PropertyRef Name="SundayID" />
+      </Principal>
+      <Dependent Role="tblOffering">
+        <PropertyRef Name="SundayID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblServiceAttendance_tblServices">
+    <End Type="TBOffice.Model.Service" Role="tblService" Multiplicity="0..1" />
+    <End Type="TBOffice.Model.AttendanceCount" Role="tblServiceAttendance" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblService">
+        <PropertyRef Name="ServiceID" />
+      </Principal>
+      <Dependent Role="tblServiceAttendance">
+        <PropertyRef Name="ServiceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblServiceAttendance_tblSundays">
+    <End Type="TBOffice.Model.Sunday" Role="tblSunday" Multiplicity="0..1" />
+    <End Type="TBOffice.Model.AttendanceCount" Role="tblServiceAttendance" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblSunday">
+        <PropertyRef Name="SundayID" />
+      </Principal>
+      <Dependent Role="tblServiceAttendance">
+        <PropertyRef Name="SundayID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_secUsers_Memberships">
+    <End Type="TBOffice.Model.AspMembership" Role="AspMembership" Multiplicity="0..1" />
+    <End Type="TBOffice.Model.TBUser" Role="TBUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspMembership">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="TBUser">
+        <PropertyRef Name="AspUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="secUserRoles">
+    <End Type="TBOffice.Model.Role" Role="Role" Multiplicity="*" />
+    <End Type="TBOffice.Model.TBUser" Role="TBUser" Multiplicity="*" />
+  </Association>
+  <ComplexType Name="fxMenu">
+    <Property Type="Int32" Name="MenuID" Nullable="false" />
+    <Property Type="Int32" Name="ParentMenuID" Nullable="true" />
+    <Property Type="String" Name="ShortDesc" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="NavigateUrl" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ImageUrl" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Target" Nullable="true" MaxLength="50" />
+    <Property Type="Boolean" Name="Enabled" Nullable="false" />
+  </ComplexType>
+</Schema>

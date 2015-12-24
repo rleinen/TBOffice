@@ -1,0 +1,230 @@
+/*
+ CSS Style for APNSoft Menu.
+ Version: Win7 4.8
+ Created: 11/12/2010
+ Updated: 10/12/2011
+ Copyright (C) APNSoft. All rights reserved.
+ http://www.apnsoft.com
+
+ Free for commercial and non-commercial use.
+ You can distribute and modify it freely.
+*/
+
+
+/*=====================Global=======================*/
+
+/*Icon TD, Title TD, Arrow TD*/
+.IconTD, .TitleTD, .ArrowTD
+{
+	font-size:11px;
+	font-family:Tahoma,Verdana;
+	color:#1F2427;
+	white-space:nowrap;
+	padding:2px;
+}
+
+
+/*=====================Main Menu=======================*/
+
+/*Main Menu: DIV*/
+.MainMenuDIV
+{
+	padding:3px;
+	border:solid 1px #5B6979;
+	border-bottom:solid 1px #A0AFC3;
+	background:#E6F0FA url($SkinFolder$Background.gif);
+	background-repeat:repeat-x;
+	cursor:default;
+}
+
+/*Main Menu: Item TD*/
+.MainMenuItemTD
+{
+	padding:0px;
+	padding-left:8px;
+	color:#141517;
+}
+
+/*Main Menu: Item TD (Hovered)*/
+.MainMenuItemHoveredTD
+{
+	padding:0px;
+	padding-left:8px;
+	background:#E2EEFB url($SkinFolder$ItemHoveredBackground1.gif);
+	background-repeat:no-repeat;
+	background-position:left;
+}
+
+/*Main Menu: Item TD (Selected)*/
+.MainMenuItemSelectedTD
+{
+	padding:0px;
+	padding-left:8px;
+	background:#F2F2F2 url($SkinFolder$ItemSelectedBackground1.gif);
+	background-repeat:no-repeat;
+	background-position:left;
+}
+
+/*Main Menu: Title TD*/
+.MainMenuItemTD .TitleTD, .MainMenuItemHoveredTD .TitleTD, .MainMenuItemSelectedTD .TitleTD
+{
+	padding-top:5px;
+	padding-bottom:6px;
+}
+
+/*Main Menu: Arrow TD*/
+.MainMenuItemTD .ArrowTD
+{
+	padding-right:8px;
+}
+
+/*Main Menu: Arrow TD (Hovered)*/
+.MainMenuItemHoveredTD .ArrowTD
+{
+	padding-right:8px;
+	background:#E2EEFB url($SkinFolder$ItemHoveredBackground1_Right.gif);
+	background-repeat:no-repeat;
+	background-position:right;
+}
+
+/*Main Menu: Arrow TD (Selected)*/
+.MainMenuItemSelectedTD .ArrowTD
+{
+	padding-right:8px;
+	background:#F2F2F2 url($SkinFolder$ItemSelectedBackground1_Right.gif);
+	background-repeat:no-repeat;
+	background-position:right;
+}
+
+
+/*=====================SubMenu=======================*/
+
+/*Submenu: DIV*/
+.SubMenuDIV
+{
+	padding:3px;
+	border:solid 1px #646464;
+	background:#F0F0F0 url($SkinFolder$BackgroundVertical.gif);
+	background-repeat:repeat-y;
+	cursor:default;
+	
+	/*Shadow*/
+	-moz-box-shadow: 2px 2px 3px #A9A9A9; 
+	-webkit-box-shadow: 2px 2px 3px #A9A9A9; 
+	box-shadow: 2px 2px 3px #A9A9A9; 
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#A9A9A9')";
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#A9A9A9');
+}
+
+/*Submenu: Item TD*/
+.SubMenuItemTD
+{
+	padding:0px;
+	padding-left:2px;
+}
+
+/*Submenu: Item TD (Hovered)*/
+.SubMenuItemHoveredTD
+{
+	padding:0px;
+	padding-left:2px;
+	background:#E2EEFB url($SkinFolder$ItemHoveredBackground2.gif);
+	background-repeat:no-repeat;
+	background-position:left;
+}
+
+/*Submenu: Item TD (Selected)*/
+.SubMenuItemSelectedTD
+{
+	padding:0px;
+	padding-left:2px;
+	background:#F9F9F9 url($SkinFolder$ItemSelectedBackground2.gif);
+	background-repeat:no-repeat;
+	background-position:left;
+}
+
+/*Submenu: Title TD*/
+.SubMenuItemTD .TitleTD, .SubMenuItemHoveredTD .TitleTD, .SubMenuItemSelectedTD .TitleTD
+{
+	padding:0px;
+	padding-top:4px;
+	padding-bottom:4px;
+	padding-left:12px;
+}
+
+/*Submenu: Arrow TD (Hovered)*/
+.SubMenuItemHoveredTD .ArrowTD
+{
+	background:#E2EEFB url($SkinFolder$ItemHoveredBackground2_Right.gif);
+	background-repeat:no-repeat;
+	background-position:right;
+}
+
+/*Submenu: Arrow TD (Selected)*/
+.SubMenuItemSelectedTD .ArrowTD
+{
+	background:#F9F9F9 url($SkinFolder$ItemSelectedBackground2_Right.gif);
+	background-repeat:no-repeat;
+	background-position:right;
+}
+
+
+/*=====================Additional classes=======================*/
+
+/*Vertical separator: TD*/
+.SeparatorVerticalTD
+{
+	padding:2px;
+	background-image: url($SkinFolder$SeparatorVerticalBackground.gif);
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+
+/*Horizontal separator: TD*/
+.SeparatorHorizontalTD
+{
+	padding:4px;
+	background-image: url($SkinFolder$SeparatorBackground.gif);
+	background-repeat:no-repeat;
+	background-position:left center;
+}
+
+/*Tooltip: DIV*/
+.TooltipDIV
+{
+	font-size:11px;
+	font-family:Tahoma,Verdana;
+	color:#575757;
+	background-color:#E4E5F0;
+	border:solid 1px #767676;
+	padding:4px;
+	background-image: url($SkinFolder$TooltipBackground.gif);
+	background-repeat:repeat-x;
+	
+	/*Rounded Corners*/
+	-moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    -khtml-border-radius:3px;
+    border-radius:3px;
+    
+    /*Shadow*/
+	-moz-box-shadow: 2px 2px 3px #A9A9A9; 
+	-webkit-box-shadow: 2px 2px 3px #A9A9A9; 
+	box-shadow: 2px 2px 3px #A9A9A9; 
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#A9A9A9')";
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#A9A9A9');
+}
+
+/*Scroll Bar*/
+.ScrollBar
+{
+	scrollbar-base-color: #F1F1F1;
+	scrollbar-arrow-color: #878787;
+	scrollbar-3dlight-color: #DBDBDB;
+	scrollbar-darkshadow-color: #B6B6B6;
+	scrollbar-face-color: #F1F1F1;
+	scrollbar-highlight-color: #F1F1F1;
+	scrollbar-shadow-color: #F1F1F1;
+	scrollbar-track-color: #E2E2E2;
+}
+

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="dc240c25bb1b42ce831bccb07d1473d0" Name="Full">
+        <EntityTypeShape EntityType="TBOffice.Model.AspApplication" Width="1.5" PointX="0.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TBOffice.Model.AspMembership" Width="1.5" PointX="5.25" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TBOffice.Model.AspProfile" Width="1.5" PointX="5.25" PointY="23" IsExpanded="true" />
+        <EntityTypeShape EntityType="TBOffice.Model.AspRole" Width="1.5" PointX="3" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TBOffice.Model.Menu" Width="1.5" PointX="9" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TBOffice.Model.Role" Width="1.5" PointX="11.25" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TBOffice.Model.TBUser" Width="1.5" PointX="8.25" PointY="20.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TBOffice.Model.Congregation" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="TBOffice.Model.DateList" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TBOffice.Model.EECategory" Width="1.5" PointX="6" PointY="26.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TBOffice.Model.EECompensation" Width="1.5" PointX="10.5" PointY="21.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TBOffice.Model.EEType" Width="1.5" PointX="6" PointY="28.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TBOffice.Model.Offering" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TBOffice.Model.AttendanceCount" Width="1.5" PointX="4.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TBOffice.Model.Service" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TBOffice.Model.Sunday" Width="1.5" PointX="8.5" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="TBOffice.Model.TORequest" Width="1.5" PointX="10.5" PointY="25.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TBOffice.Model.TSEntry" Width="1.5" PointX="10.5" PointY="28.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TBOffice.Model.TSWeek" Width="1.5" PointX="13.5" PointY="18.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TBOffice.Model.Week" Width="1.5" PointX="11.25" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="TBOffice.Model.AspUser" Width="1.5" PointX="3" PointY="22.625" IsExpanded="true" />
+        <AssociationConnector Association="TBOffice.Model.MembershipApplication" ManuallyRouted="false" />
+        <AssociationConnector Association="TBOffice.Model.RoleApplication" ManuallyRouted="false" />
+        <AssociationConnector Association="TBOffice.Model.UserApplication" ManuallyRouted="false" />
+        <AssociationConnector Association="TBOffice.Model.MembershipUser" ManuallyRouted="false" />
+        <AssociationConnector Association="TBOffice.Model.UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="TBOffice.Model.FK_secUsers_tblEECategory" ManuallyRouted="false" />
+        <AssociationConnector Association="TBOffice.Model.FK_secUsers_tblEEType" ManuallyRouted="false" />
+        <AssociationConnector Association="TBOffice.Model.FK_secUsers_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="TBOffice.Model.FK_tblEECompensation_secUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="TBOffice.Model.FK_tblTORequest_secUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="TBOffice.Model.FK_tblTORequest_secUsers1" ManuallyRouted="false" />
+        <AssociationConnector Association="TBOffice.Model.FK_tblTSEntry_secUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="TBOffice.Model.FK_tblTSWeek_secUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="TBOffice.Model.tblServices_tblCongregationstblServices" ManuallyRouted="false" />
+        <AssociationConnector Association="TBOffice.Model.FK_tblTSWeek_tblWeeks" ManuallyRouted="false" />
+        <AssociationConnector Association="TBOffice.Model.secMenuRoles" ManuallyRouted="false" />
+        <AssociationConnector Association="TBOffice.Model.FK_tblOfferings_tblServices" />
+        <AssociationConnector Association="TBOffice.Model.FK_tblOfferings_tblSundays" />
+        <AssociationConnector Association="TBOffice.Model.FK_tblServiceAttendance_tblServices" />
+        <AssociationConnector Association="TBOffice.Model.FK_tblServiceAttendance_tblSundays" />
+        <AssociationConnector Association="TBOffice.Model.FK_secUsers_Memberships" />
+        <AssociationConnector Association="TBOffice.Model.secUserRoles" />
+      </Diagram>
+      <Diagram DiagramId="a7cf14deb3c140cab93893e180f4e15d" Name="Metrics" >
+        <EntityTypeShape EntityType="TBOffice.Model.Offering" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="TBOffice.Model.Service" Width="2.125" PointX="0.5" PointY="1.375" />
+        <AssociationConnector Association="TBOffice.Model.FK_tblOfferings_tblServices" />
+        <EntityTypeShape EntityType="TBOffice.Model.Sunday" Width="2.125" PointX="8.75" PointY="1.5" />
+        <AssociationConnector Association="TBOffice.Model.FK_tblOfferings_tblSundays" />
+        <EntityTypeShape EntityType="TBOffice.Model.AttendanceCount" Width="1.75" PointX="4.875" PointY="4" />
+        <AssociationConnector Association="TBOffice.Model.FK_tblServiceAttendance_tblServices" ManuallyRouted="false" >
+        </AssociationConnector>
+        <AssociationConnector Association="TBOffice.Model.FK_tblServiceAttendance_tblSundays" />
+        <EntityTypeShape EntityType="TBOffice.Model.Congregation" Width="1.875" PointX="1.625" PointY="6.5" />
+        <AssociationConnector Association="TBOffice.Model.tblServices_tblCongregationstblServices" />
+      </Diagram>
+      <Diagram DiagramId="372b4438fe7d440cb9838d51d699acb3" Name="Users" >
+        <EntityTypeShape EntityType="TBOffice.Model.AspApplication" Width="1.5" PointX="1.5" PointY="1.625" />
+        <EntityTypeShape EntityType="TBOffice.Model.AspMembership" Width="2.25" PointX="4.125" PointY="2" />
+        <AssociationConnector Association="TBOffice.Model.MembershipApplication" />
+        <EntityTypeShape EntityType="TBOffice.Model.AspProfile" Width="1.5" PointX="0.5" PointY="10.5" />
+        <EntityTypeShape EntityType="TBOffice.Model.AspRole" Width="1.5" PointX="0.5" PointY="5" />
+        <AssociationConnector Association="TBOffice.Model.RoleApplication" />
+        <EntityTypeShape EntityType="TBOffice.Model.Menu" Width="1.5" PointX="9.125" PointY="1.375" />
+        <EntityTypeShape EntityType="TBOffice.Model.Role" Width="1.5" PointX="9.125" PointY="5.125" />
+        <AssociationConnector Association="TBOffice.Model.secMenuRoles" />
+        <EntityTypeShape EntityType="TBOffice.Model.TBUser" Width="1.75" PointX="7" PointY="5.5" />
+        <EntityTypeShape EntityType="TBOffice.Model.AspUser" Width="1.5" PointX="2.375" PointY="8.75" />
+        <AssociationConnector Association="TBOffice.Model.UserApplication" />
+        <AssociationConnector Association="TBOffice.Model.MembershipUser" />
+        <AssociationConnector Association="TBOffice.Model.UserProfile" />
+        <AssociationConnector Association="TBOffice.Model.FK_secUsers_Users" />
+        <AssociationConnector Association="TBOffice.Model.FK_secUsers_Memberships" />
+        <AssociationConnector Association="TBOffice.Model.secUserRoles" />
+      </Diagram>
+      <Diagram DiagramId="c85f3f36e95449908f0120effe37493a" Name="Scheduling" >
+        <EntityTypeShape EntityType="TBOffice.Model.DateList" Width="1.5" PointX="0.5" PointY="0.5" />
+        <EntityTypeShape EntityType="TBOffice.Model.EECategory" Width="1.5" PointX="10.5" PointY="2.625" />
+        <EntityTypeShape EntityType="TBOffice.Model.EECompensation" Width="1.875" PointX="4.875" PointY="1.625" />
+        <EntityTypeShape EntityType="TBOffice.Model.EEType" Width="1.5" PointX="10.625" PointY="0.625" />
+        <EntityTypeShape EntityType="TBOffice.Model.TORequest" Width="1.5" PointX="0.875" PointY="4.875" />
+        <EntityTypeShape EntityType="TBOffice.Model.TSEntry" Width="1.5" PointX="3" PointY="1.75" />
+        <EntityTypeShape EntityType="TBOffice.Model.TSWeek" Width="1.5" PointX="10.125" PointY="4.875" />
+        <EntityTypeShape EntityType="TBOffice.Model.Week" Width="1.5" PointX="12.875" PointY="6.5" />
+        <AssociationConnector Association="TBOffice.Model.FK_tblTSWeek_tblWeeks" />
+        <EntityTypeShape EntityType="TBOffice.Model.TBUser" Width="2.125" PointX="7.375" PointY="1.375" />
+        <AssociationConnector Association="TBOffice.Model.FK_secUsers_tblEECategory" />
+        <AssociationConnector Association="TBOffice.Model.FK_secUsers_tblEEType" />
+        <AssociationConnector Association="TBOffice.Model.FK_tblEECompensation_secUsers" />
+        <AssociationConnector Association="TBOffice.Model.FK_tblTORequest_secUsers" />
+        <AssociationConnector Association="TBOffice.Model.FK_tblTORequest_secUsers1" />
+        <AssociationConnector Association="TBOffice.Model.FK_tblTSEntry_secUsers" />
+        <AssociationConnector Association="TBOffice.Model.FK_tblTSWeek_secUsers" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

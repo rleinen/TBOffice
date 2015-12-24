@@ -1,0 +1,1669 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9735EBD5-A98B-4076-9006-CE93D0967FF6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TBOffice</RootNamespace>
+    <AssemblyName>TBOffice</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\packages\AjaxControlToolkit.7.1213\lib\45\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxMin">
+      <HintPath>..\packages\AjaxMin.4.97.4951.28483\lib\net40\AjaxMin.dll</HintPath>
+    </Reference>
+    <Reference Include="APNSoftControls, Version=4.5.2.45, Culture=neutral, PublicKeyToken=fed44da769840c37, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\APNSoft Controls 4.5 for ASP.NET 4.5\Bin\APNSoftControls.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery, Version=1.9.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.9.1\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="ControlExtensions">
+      <HintPath>..\..\..\..\Downloads\ScrollableGridViewApp\ScrollableGridViewApp\Bin\ControlExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxThemes.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v15.2.Web, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EO.Web, Version=11.0.48.2, Culture=neutral, PublicKeyToken=e92353a6bf73fffc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Essential Objects\EO.Total 2013\EO.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.6\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Data.Edm, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Data.Edm.5.2.0\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Data.OData.5.2.0\lib\net40\Microsoft.Data.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Configuration, Version=1.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.WindowsAzure.ConfigurationManager.1.8.0.0\lib\net35-full\Microsoft.WindowsAzure.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Storage, Version=2.1.0.4, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\WindowsAzure.Storage.2.1.0.4\lib\net40\Microsoft.WindowsAzure.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="obout_Calendar2_Net">
+      <HintPath>..\..\..\..\..\..\..\oboutSuite_3.5\bin\obout_Calendar2_Net.dll</HintPath>
+    </Reference>
+    <Reference Include="obout_ComboBox">
+      <HintPath>..\..\..\..\..\..\..\oboutSuite_3.5\bin\obout_ComboBox.dll</HintPath>
+    </Reference>
+    <Reference Include="obout_EasyMenu_Pro">
+      <HintPath>..\..\..\..\..\..\..\oboutSuite_3.5\bin\obout_EasyMenu_Pro.dll</HintPath>
+    </Reference>
+    <Reference Include="obout_Grid_NET">
+      <HintPath>..\..\..\..\..\..\..\oboutSuite_3.5\bin\obout_Grid_NET.dll</HintPath>
+    </Reference>
+    <Reference Include="obout_Interface">
+      <HintPath>..\..\..\..\..\..\..\oboutSuite_3.5\bin\obout_Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="obout_ListBox">
+      <HintPath>..\..\..\..\..\..\..\oboutSuite_3.5\bin\obout_ListBox.dll</HintPath>
+    </Reference>
+    <Reference Include="obout_SuperForm">
+      <HintPath>..\..\..\..\..\..\..\oboutSuite_3.5\bin\obout_SuperForm.dll</HintPath>
+    </Reference>
+    <Reference Include="SpacerControl, Version=1.0.1.17502, Culture=neutral, PublicKeyToken=79989f58b09edabf">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\SpacerControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Spatial, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Spatial.5.2.0\lib\net40\System.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery.UI.Combined">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.UI.Combined.1.8.24\lib\net45\AspNet.ScriptManager.jQuery.UI.Combined.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms, Version=4.5.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.4.5.6\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.2\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.Core.4.1.4.12333\lib\net40-full\DotNetOpenAuth.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Core.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth.Consumer, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Consumer.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OAuth.Consumer.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.Core.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OpenId.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId.RelyingParty, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.RelyingParty.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OpenId.RelyingParty.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.AspNet, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.AspNet.4.1.4.12333\lib\net40-full\DotNetOpenAuth.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Membership.OpenAuth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Membership.OpenAuth.1.0.1\lib\net45\Microsoft.AspNet.Membership.OpenAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.0.0\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.0\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Manage.aspx" />
+    <Content Include="Account\OpenAuthProviders.ascx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Account\RegisterExternalLogin.aspx" />
+    <Content Include="Admin\MenuAccess.aspx" />
+    <Content Include="Admin\User.aspx" />
+    <Content Include="App_Data\RadCaptcha\0.wav" />
+    <Content Include="App_Data\RadCaptcha\1.wav" />
+    <Content Include="App_Data\RadCaptcha\2.wav" />
+    <Content Include="App_Data\RadCaptcha\3.wav" />
+    <Content Include="App_Data\RadCaptcha\4.wav" />
+    <Content Include="App_Data\RadCaptcha\5.wav" />
+    <Content Include="App_Data\RadCaptcha\6.wav" />
+    <Content Include="App_Data\RadCaptcha\7.wav" />
+    <Content Include="App_Data\RadCaptcha\8.wav" />
+    <Content Include="App_Data\RadCaptcha\9.wav" />
+    <Content Include="App_Data\RadCaptcha\A.wav" />
+    <Content Include="App_Data\RadCaptcha\B.wav" />
+    <Content Include="App_Data\RadCaptcha\C.wav" />
+    <Content Include="App_Data\RadCaptcha\D.wav" />
+    <Content Include="App_Data\RadCaptcha\E.wav" />
+    <Content Include="App_Data\RadCaptcha\F.wav" />
+    <Content Include="App_Data\RadCaptcha\G.wav" />
+    <Content Include="App_Data\RadCaptcha\H.wav" />
+    <Content Include="App_Data\RadCaptcha\I.wav" />
+    <Content Include="App_Data\RadCaptcha\J.wav" />
+    <Content Include="App_Data\RadCaptcha\K.wav" />
+    <Content Include="App_Data\RadCaptcha\L.wav" />
+    <Content Include="App_Data\RadCaptcha\M.wav" />
+    <Content Include="App_Data\RadCaptcha\N.wav" />
+    <Content Include="App_Data\RadCaptcha\O.wav" />
+    <Content Include="App_Data\RadCaptcha\P.wav" />
+    <Content Include="App_Data\RadCaptcha\Q.wav" />
+    <Content Include="App_Data\RadCaptcha\R.wav" />
+    <Content Include="App_Data\RadCaptcha\S.wav" />
+    <Content Include="App_Data\RadCaptcha\T.wav" />
+    <Content Include="App_Data\RadCaptcha\U.wav" />
+    <Content Include="App_Data\RadCaptcha\V.wav" />
+    <Content Include="App_Data\RadCaptcha\W.wav" />
+    <Content Include="App_Data\RadCaptcha\X.wav" />
+    <Content Include="App_Data\RadCaptcha\Y.wav" />
+    <Content Include="App_Data\RadCaptcha\Z.wav" />
+    <Content Include="bin\SpacerControl.dll" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Default2.aspx" />
+    <Content Include="Employee\Schedule.aspx" />
+    <Content Include="Employee\Timesheet.aspx" />
+    <Content Include="Employee\Timesheet3.aspx" />
+    <Content Include="Employee\VacationCalendar.aspx" />
+    <Content Include="Employee\VacationRequest.aspx" />
+    <Content Include="Finances\BenevolenceFund.aspx" />
+    <Content Include="Finances\BudgetForm.ascx" />
+    <Content Include="Finances\BudgetFormTest.aspx" />
+    <Content Include="Finances\CBCDedicated.aspx" />
+    <Content Include="Finances\CBCExpense.aspx" />
+    <Content Include="Finances\CBCIncome.aspx" />
+    <Content Include="Finances\DedicatedFund.aspx" />
+    <Content Include="Finances\GFExpenseMTD.aspx" />
+    <Content Include="Finances\GFExpense.aspx" />
+    <Content Include="Finances\PayrollReport.aspx" />
+    <Content Include="Finances\GFIncomeMTD.aspx" />
+    <Content Include="Finances\GFIncome.aspx" />
+    <Content Include="Finances\MinistryAccounts.aspx" />
+    <Content Include="Finances\MinistryDedicatedAccounts.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Images\accent.png" />
+    <Content Include="Images\bullet.png" />
+    <Content Include="Images\heroAccent.png" />
+    <Content Include="Images\orderedList0.png" />
+    <Content Include="Images\orderedList1.png" />
+    <Content Include="Images\orderedList2.png" />
+    <Content Include="Images\orderedList3.png" />
+    <Content Include="Images\orderedList4.png" />
+    <Content Include="Images\orderedList5.png" />
+    <Content Include="Images\orderedList6.png" />
+    <Content Include="Images\orderedList7.png" />
+    <Content Include="Images\orderedList8.png" />
+    <Content Include="Images\orderedList9.png" />
+    <Content Include="Default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Metrics\Attendance.aspx" />
+    <Content Include="Metrics\Offerings.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="Main.Master" />
+    <Content Include="App_Data\RadSpell\de-DE.tdf" />
+    <Content Include="App_Data\RadSpell\en-US.tdf" />
+    <Content Include="App_Data\RadSpell\fr-FR.tdf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\npm.js" />
+    <Content Include="TBCA\TBCA-Expense.aspx" />
+    <Content Include="TBCA\TBCA-Income.aspx" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="WorkOrder\WOByCategory.aspx" />
+    <Content Include="WorkOrder\WO_Completed.aspx" />
+    <Content Include="WorkOrder\WO_Approved.aspx" />
+    <Content Include="WorkOrder\WO_Pending.aspx" />
+    <Content Include="WorkOrder\WOByStatus.aspx" />
+    <Content Include="WorkOrder\WorkOrder.aspx" />
+    <EntityDeploy Include="Model\TBBF.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>TBBF.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Model\TBBF.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>TBBF.edmx</DependentUpon>
+      <LastGenOutput>TBBF.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model\TBBF.edmx.diagram">
+      <DependentUpon>TBBF.edmx</DependentUpon>
+    </Content>
+    <Content Include="Model\TBBF.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>TBBF.edmx</DependentUpon>
+      <LastGenOutput>TBBF.cs</LastGenOutput>
+    </Content>
+    <None Include="Properties\PublishProfiles\ChurchSQL.pubxml" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Scripts\jquery-ui-1.8.24.js" />
+    <Content Include="Scripts\jquery-ui-1.8.24.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Skins\APNSoft\ArrowDown.gif" />
+    <Content Include="Skins\APNSoft\ArrowDownActive.gif" />
+    <Content Include="Skins\APNSoft\ArrowRight.gif" />
+    <Content Include="Skins\APNSoft\ArrowRightActive.gif" />
+    <Content Include="Skins\APNSoft\ArrowUp.gif" />
+    <Content Include="Skins\APNSoft\ArrowUpActive.gif" />
+    <Content Include="Skins\APNSoft\Background.jpg" />
+    <Content Include="Skins\APNSoft\BackgroundVertical.jpg" />
+    <Content Include="Skins\APNSoft\ShadowBottom.png" />
+    <Content Include="Skins\APNSoft\ShadowCorner.png" />
+    <Content Include="Skins\APNSoft\ShadowRight.png" />
+    <Content Include="Skins\APNSoft\Style.CSS" />
+    <Content Include="Skins\APNSoft\StyleVertical.CSS" />
+    <Content Include="Skins\Background\ArrowRight.gif" />
+    <Content Include="Skins\Background\ArrowRightActive.gif" />
+    <Content Include="Skins\Background\Background.jpg" />
+    <Content Include="Skins\Background\ItemHoveredBackground.jpg" />
+    <Content Include="Skins\Background\ItemSelectedBackground.jpg" />
+    <Content Include="Skins\Background\Style.CSS" />
+    <Content Include="Skins\Classic\ArrowRight.gif" />
+    <Content Include="Skins\Classic\ArrowRightActive.gif" />
+    <Content Include="Skins\Classic\Style.CSS" />
+    <Content Include="Skins\GrayScale\ArrowDown.gif" />
+    <Content Include="Skins\GrayScale\ArrowRight.gif" />
+    <Content Include="Skins\GrayScale\ArrowUp.gif" />
+    <Content Include="Skins\GrayScale\Style.CSS" />
+    <Content Include="Skins\ImagesOnly\Cables.jpg" />
+    <Content Include="Skins\ImagesOnly\CablesActive.jpg" />
+    <Content Include="Skins\ImagesOnly\Circuits.jpg" />
+    <Content Include="Skins\ImagesOnly\CircuitsActive.jpg" />
+    <Content Include="Skins\ImagesOnly\Faqs.jpg" />
+    <Content Include="Skins\ImagesOnly\FaqsActive.jpg" />
+    <Content Include="Skins\ImagesOnly\Firmware.jpg" />
+    <Content Include="Skins\ImagesOnly\FirmwareActive.jpg" />
+    <Content Include="Skins\ImagesOnly\Hardware.jpg" />
+    <Content Include="Skins\ImagesOnly\HardwareActive.jpg" />
+    <Content Include="Skins\ImagesOnly\Home.jpg" />
+    <Content Include="Skins\ImagesOnly\HomeActive.jpg" />
+    <Content Include="Skins\ImagesOnly\Manuals.jpg" />
+    <Content Include="Skins\ImagesOnly\ManualsActive.jpg" />
+    <Content Include="Skins\ImagesOnly\Media.jpg" />
+    <Content Include="Skins\ImagesOnly\MediaActive.jpg" />
+    <Content Include="Skins\ImagesOnly\Modems.jpg" />
+    <Content Include="Skins\ImagesOnly\ModemsActive.jpg" />
+    <Content Include="Skins\ImagesOnly\PCMCI.jpg" />
+    <Content Include="Skins\ImagesOnly\PCMCIActive.jpg" />
+    <Content Include="Skins\ImagesOnly\Products.jpg" />
+    <Content Include="Skins\ImagesOnly\ProductsActive.jpg" />
+    <Content Include="Skins\ImagesOnly\Routers.jpg" />
+    <Content Include="Skins\ImagesOnly\RoutersActive.jpg" />
+    <Content Include="Skins\ImagesOnly\SeparatorVertical.jpg" />
+    <Content Include="Skins\ImagesOnly\Sitemap.jpg" />
+    <Content Include="Skins\ImagesOnly\SitemapActive.jpg" />
+    <Content Include="Skins\ImagesOnly\Software.jpg" />
+    <Content Include="Skins\ImagesOnly\SoftwareActive.jpg" />
+    <Content Include="Skins\ImagesOnly\Style.CSS" />
+    <Content Include="Skins\ImagesOnly\Support.jpg" />
+    <Content Include="Skins\ImagesOnly\SupportActive.jpg" />
+    <Content Include="Skins\Office2003\ArrowRight.gif" />
+    <Content Include="Skins\Office2003\Background.gif" />
+    <Content Include="Skins\Office2003\IconAutoFormat.gif" />
+    <Content Include="Skins\Office2003\IconAutoFormatActive.gif" />
+    <Content Include="Skins\Office2003\IconBullets.gif" />
+    <Content Include="Skins\Office2003\IconBulletsActive.gif" />
+    <Content Include="Skins\Office2003\IconCopy.gif" />
+    <Content Include="Skins\Office2003\IconCopyActive.gif" />
+    <Content Include="Skins\Office2003\IconCut.gif" />
+    <Content Include="Skins\Office2003\IconCutActive.gif" />
+    <Content Include="Skins\Office2003\IconDocMap.gif" />
+    <Content Include="Skins\Office2003\IconDocMapActive.gif" />
+    <Content Include="Skins\Office2003\IconEmpty.gif" />
+    <Content Include="Skins\Office2003\IconFileSearch.gif" />
+    <Content Include="Skins\Office2003\IconFileSearchActive.gif" />
+    <Content Include="Skins\Office2003\IconFind.gif" />
+    <Content Include="Skins\Office2003\IconFindActive.gif" />
+    <Content Include="Skins\Office2003\IconFont.gif" />
+    <Content Include="Skins\Office2003\IconFontActive.gif" />
+    <Content Include="Skins\Office2003\IconHeaderFooter.gif" />
+    <Content Include="Skins\Office2003\IconHelp.gif" />
+    <Content Include="Skins\Office2003\IconHelpActive.gif" />
+    <Content Include="Skins\Office2003\IconNew.gif" />
+    <Content Include="Skins\Office2003\IconNewActive.gif" />
+    <Content Include="Skins\Office2003\IconNormal.gif" />
+    <Content Include="Skins\Office2003\IconOffClpb.gif" />
+    <Content Include="Skins\Office2003\IconOffClpbActive.gif" />
+    <Content Include="Skins\Office2003\IconOpen.gif" />
+    <Content Include="Skins\Office2003\IconOpenActive.gif" />
+    <Content Include="Skins\Office2003\IconOutline.gif" />
+    <Content Include="Skins\Office2003\IconParagraph.gif" />
+    <Content Include="Skins\Office2003\IconParagraphActive.gif" />
+    <Content Include="Skins\Office2003\IconPaste.gif" />
+    <Content Include="Skins\Office2003\IconPasteActive.gif" />
+    <Content Include="Skins\Office2003\IconPrint.gif" />
+    <Content Include="Skins\Office2003\IconPrintActive.gif" />
+    <Content Include="Skins\Office2003\IconPrintPreview.gif" />
+    <Content Include="Skins\Office2003\IconPrintPreviewActive.gif" />
+    <Content Include="Skins\Office2003\IconReading.gif" />
+    <Content Include="Skins\Office2003\IconReadingActive.gif" />
+    <Content Include="Skins\Office2003\IconReveal.gif" />
+    <Content Include="Skins\Office2003\IconRevealActive.gif" />
+    <Content Include="Skins\Office2003\IconSave.gif" />
+    <Content Include="Skins\Office2003\IconSaveActive.gif" />
+    <Content Include="Skins\Office2003\IconSaveWeb.gif" />
+    <Content Include="Skins\Office2003\IconSaveWebActive.gif" />
+    <Content Include="Skins\Office2003\IconStyles.gif" />
+    <Content Include="Skins\Office2003\IconStylesActive.gif" />
+    <Content Include="Skins\Office2003\IconTabFrame.gif" />
+    <Content Include="Skins\Office2003\IconThumbnails.gif" />
+    <Content Include="Skins\Office2003\IconWebLayout.gif" />
+    <Content Include="Skins\Office2003\IconWebLayoutActive.gif" />
+    <Content Include="Skins\Office2003\SeparatorBackground.gif" />
+    <Content Include="Skins\Office2003\Style.CSS" />
+    <Content Include="Skins\OfficeXP\ArrowRight.gif" />
+    <Content Include="Skins\OfficeXP\Background.gif" />
+    <Content Include="Skins\OfficeXP\IconAddExistedItem.gif" />
+    <Content Include="Skins\OfficeXP\IconAddExisting.gif" />
+    <Content Include="Skins\OfficeXP\IconAddExistingActive.gif" />
+    <Content Include="Skins\OfficeXP\IconAddNew.gif" />
+    <Content Include="Skins\OfficeXP\IconAddNewActive.gif" />
+    <Content Include="Skins\OfficeXP\IconCloseSolution.gif" />
+    <Content Include="Skins\OfficeXP\IconCloseSolutionActive.gif" />
+    <Content Include="Skins\OfficeXP\IconCopy.gif" />
+    <Content Include="Skins\OfficeXP\IconCopyActive.gif" />
+    <Content Include="Skins\OfficeXP\IconCut.gif" />
+    <Content Include="Skins\OfficeXP\IconCutActive.gif" />
+    <Content Include="Skins\OfficeXP\IconDelete.gif" />
+    <Content Include="Skins\OfficeXP\IconDeleteActive.gif" />
+    <Content Include="Skins\OfficeXP\IconDots.gif" />
+    <Content Include="Skins\OfficeXP\IconDotsActive.gif" />
+    <Content Include="Skins\OfficeXP\IconEmpty.gif" />
+    <Content Include="Skins\OfficeXP\IconFile.gif" />
+    <Content Include="Skins\OfficeXP\IconFileActive.gif" />
+    <Content Include="Skins\OfficeXP\IconFileWeb.gif" />
+    <Content Include="Skins\OfficeXP\IconFileWebActive.gif" />
+    <Content Include="Skins\OfficeXP\IconNew.gif" />
+    <Content Include="Skins\OfficeXP\IconNewActive.gif" />
+    <Content Include="Skins\OfficeXP\IconOpen.gif" />
+    <Content Include="Skins\OfficeXP\IconOpenActive.gif" />
+    <Content Include="Skins\OfficeXP\IconOpenSolution.gif" />
+    <Content Include="Skins\OfficeXP\IconOpenSolutionActive.gif" />
+    <Content Include="Skins\OfficeXP\IconPaste.gif" />
+    <Content Include="Skins\OfficeXP\IconPasteActive.gif" />
+    <Content Include="Skins\OfficeXP\IconProject.gif" />
+    <Content Include="Skins\OfficeXP\IconProjectActive.gif" />
+    <Content Include="Skins\OfficeXP\IconProjectWeb.gif" />
+    <Content Include="Skins\OfficeXP\IconProjectWebActive.gif" />
+    <Content Include="Skins\OfficeXP\Style.CSS" />
+    <Content Include="Skins\PreciseCustomization\ArrowRight.gif" />
+    <Content Include="Skins\PreciseCustomization\Background.jpg" />
+    <Content Include="Skins\PreciseCustomization\Image.gif" />
+    <Content Include="Skins\PreciseCustomization\ImageActive.gif" />
+    <Content Include="Skins\PreciseCustomization\ItemHoveredBackground.jpg" />
+    <Content Include="Skins\PreciseCustomization\ItemSelectedBackground.jpg" />
+    <Content Include="Skins\PreciseCustomization\Style.CSS" />
+    <Content Include="Skins\Readme.txt" />
+    <Content Include="Skins\ShadowCSS\ArrowRight.gif" />
+    <Content Include="Skins\ShadowCSS\Style.CSS" />
+    <Content Include="Skins\ShadowPNG\ArrowRight.gif" />
+    <Content Include="Skins\ShadowPNG\ShadowBottom.png" />
+    <Content Include="Skins\ShadowPNG\ShadowCorner.png" />
+    <Content Include="Skins\ShadowPNG\ShadowLeft.png" />
+    <Content Include="Skins\ShadowPNG\ShadowRight.png" />
+    <Content Include="Skins\ShadowPNG\Style.CSS" />
+    <Content Include="Skins\Templates\ArrowDown.gif" />
+    <Content Include="Skins\Templates\ArrowRight.gif" />
+    <Content Include="Skins\Templates\ArrowUp.gif" />
+    <Content Include="Skins\Templates\Style.CSS" />
+    <Content Include="Skins\Transparency\ArrowRight.gif" />
+    <Content Include="Skins\Transparency\ArrowRightActive.gif" />
+    <Content Include="Skins\Transparency\Style.CSS" />
+    <Content Include="Skins\Win7\ArrowDown.gif" />
+    <Content Include="Skins\Win7\ArrowRight.gif" />
+    <Content Include="Skins\Win7\ArrowUp.gif" />
+    <Content Include="Skins\Win7\Background.gif" />
+    <Content Include="Skins\Win7\BackgroundVertical.gif" />
+    <Content Include="Skins\Win7\IconCopy.gif" />
+    <Content Include="Skins\Win7\IconCut.gif" />
+    <Content Include="Skins\Win7\IconDelete.gif" />
+    <Content Include="Skins\Win7\IconLayout.gif" />
+    <Content Include="Skins\Win7\IconNobody.gif" />
+    <Content Include="Skins\Win7\IconNotepad.gif" />
+    <Content Include="Skins\Win7\IconPaste.gif" />
+    <Content Include="Skins\Win7\IconPreview.gif" />
+    <Content Include="Skins\Win7\IconWordPad.gif" />
+    <Content Include="Skins\Win7\ItemHoveredBackground1.gif" />
+    <Content Include="Skins\Win7\ItemHoveredBackground1_Right.gif" />
+    <Content Include="Skins\Win7\ItemHoveredBackground2.gif" />
+    <Content Include="Skins\Win7\ItemHoveredBackground2_Right.gif" />
+    <Content Include="Skins\Win7\ItemSelectedBackground1.gif" />
+    <Content Include="Skins\Win7\ItemSelectedBackground1_Right.gif" />
+    <Content Include="Skins\Win7\ItemSelectedBackground2.gif" />
+    <Content Include="Skins\Win7\ItemSelectedBackground2_Right.gif" />
+    <Content Include="Skins\Win7\SeparatorBackground.gif" />
+    <Content Include="Skins\Win7\SeparatorVerticalBackground.gif" />
+    <Content Include="Skins\Win7\Style.CSS" />
+    <Content Include="Skins\Win7\StyleVertical.CSS" />
+    <Content Include="Skins\Win7\TooltipBackground.gif" />
+    <Content Include="Styles\CustomeStyle\margin.gif" />
+    <Content Include="Styles\CustomeStyle\mid.gif" />
+    <Content Include="Styles\CustomeStyle\mid_over.gif" />
+    <Content Include="Styles\CustomeStyle\style.css" />
+    <Content Include="Styles\CustomeStyle\submenu.gif" />
+    <Content Include="Styles\CustomeStyle\submenu_parent.gif" />
+    <Content Include="Styles\CustomeStyle\submenu_white.gif" />
+    <Content Include="Styles\CustomeStyle\s_bg.gif" />
+    <Content Include="Styles\Dropdownlist\black_glass\OboutButton\images\button.gif" />
+    <Content Include="Styles\Dropdownlist\black_glass\OboutButton\images\button.png" />
+    <Content Include="Styles\Dropdownlist\black_glass\OboutButton\images\overlay.gif" />
+    <Content Include="Styles\Dropdownlist\black_glass\OboutButton\style.css" />
+    <Content Include="Styles\Dropdownlist\black_glass\OboutCheckBox\images\CheckBox.gif" />
+    <Content Include="Styles\Dropdownlist\black_glass\OboutCheckBox\images\CheckBox.png" />
+    <Content Include="Styles\Dropdownlist\black_glass\OboutCheckBox\style.css" />
+    <Content Include="Styles\Dropdownlist\black_glass\OboutDropDownList\images\drop-down-horizontal.gif" />
+    <Content Include="Styles\Dropdownlist\black_glass\OboutDropDownList\images\drop-down-horizontal.png" />
+    <Content Include="Styles\Dropdownlist\black_glass\OboutDropDownList\images\drop-down-vertical.gif" />
+    <Content Include="Styles\Dropdownlist\black_glass\OboutDropDownList\images\drop-down-vertical.png" />
+    <Content Include="Styles\Dropdownlist\black_glass\OboutDropDownList\images\horizontal.gif" />
+    <Content Include="Styles\Dropdownlist\black_glass\OboutDropDownList\images\horizontal.png" />
+    <Content Include="Styles\Dropdownlist\black_glass\OboutDropDownList\images\lighted.gif" />
+    <Content Include="Styles\Dropdownlist\black_glass\OboutDropDownList\images\lighted.png" />
+    <Content Include="Styles\Dropdownlist\black_glass\OboutDropDownList\images\vertical.gif" />
+    <Content Include="Styles\Dropdownlist\black_glass\OboutDropDownList\images\vertical.png" />
+    <Content Include="Styles\Dropdownlist\black_glass\OboutDropDownList\style.css" />
+    <Content Include="Styles\Dropdownlist\black_glass\OboutRadioButton\images\Radio.gif" />
+    <Content Include="Styles\Dropdownlist\black_glass\OboutRadioButton\images\Radio.png" />
+    <Content Include="Styles\Dropdownlist\black_glass\OboutRadioButton\style.css" />
+    <Content Include="Styles\Dropdownlist\black_glass\OboutTextBox\images\textarea-horizontal.gif" />
+    <Content Include="Styles\Dropdownlist\black_glass\OboutTextBox\images\textarea-horizontal.png" />
+    <Content Include="Styles\Dropdownlist\black_glass\OboutTextBox\images\textarea-vertical.gif" />
+    <Content Include="Styles\Dropdownlist\black_glass\OboutTextBox\images\textarea-vertical.png" />
+    <Content Include="Styles\Dropdownlist\black_glass\OboutTextBox\images\textbox.gif" />
+    <Content Include="Styles\Dropdownlist\black_glass\OboutTextBox\images\textbox.png" />
+    <Content Include="Styles\Dropdownlist\black_glass\OboutTextBox\style.css" />
+    <Content Include="Styles\Dropdownlist\black_glass\OboutTextBox\style_multiline.css" />
+    <Content Include="Styles\Dropdownlist\grand_gray\OboutButton\images\button.gif" />
+    <Content Include="Styles\Dropdownlist\grand_gray\OboutButton\images\button.png" />
+    <Content Include="Styles\Dropdownlist\grand_gray\OboutButton\images\overlay.gif" />
+    <Content Include="Styles\Dropdownlist\grand_gray\OboutButton\style.css" />
+    <Content Include="Styles\Dropdownlist\grand_gray\OboutCheckBox\images\CheckBox.gif" />
+    <Content Include="Styles\Dropdownlist\grand_gray\OboutCheckBox\images\CheckBox.png" />
+    <Content Include="Styles\Dropdownlist\grand_gray\OboutCheckBox\style.css" />
+    <Content Include="Styles\Dropdownlist\grand_gray\OboutDropDownList\images\drop-down-horizontal.gif" />
+    <Content Include="Styles\Dropdownlist\grand_gray\OboutDropDownList\images\drop-down-horizontal.png" />
+    <Content Include="Styles\Dropdownlist\grand_gray\OboutDropDownList\images\drop-down-vertical.gif" />
+    <Content Include="Styles\Dropdownlist\grand_gray\OboutDropDownList\images\drop-down-vertical.png" />
+    <Content Include="Styles\Dropdownlist\grand_gray\OboutDropDownList\images\horizontal.gif" />
+    <Content Include="Styles\Dropdownlist\grand_gray\OboutDropDownList\images\horizontal.png" />
+    <Content Include="Styles\Dropdownlist\grand_gray\OboutDropDownList\images\lighted.gif" />
+    <Content Include="Styles\Dropdownlist\grand_gray\OboutDropDownList\images\lighted.png" />
+    <Content Include="Styles\Dropdownlist\grand_gray\OboutDropDownList\images\vertical.gif" />
+    <Content Include="Styles\Dropdownlist\grand_gray\OboutDropDownList\images\vertical.png" />
+    <Content Include="Styles\Dropdownlist\grand_gray\OboutDropDownList\style.css" />
+    <Content Include="Styles\Dropdownlist\grand_gray\OboutRadioButton\images\Radio.gif" />
+    <Content Include="Styles\Dropdownlist\grand_gray\OboutRadioButton\images\Radio.png" />
+    <Content Include="Styles\Dropdownlist\grand_gray\OboutRadioButton\style.css" />
+    <Content Include="Styles\Dropdownlist\grand_gray\OboutTextBox\images\textarea-horizontal.gif" />
+    <Content Include="Styles\Dropdownlist\grand_gray\OboutTextBox\images\textarea-horizontal.png" />
+    <Content Include="Styles\Dropdownlist\grand_gray\OboutTextBox\images\textarea-vertical.gif" />
+    <Content Include="Styles\Dropdownlist\grand_gray\OboutTextBox\images\textarea-vertical.png" />
+    <Content Include="Styles\Dropdownlist\grand_gray\OboutTextBox\images\textbox.gif" />
+    <Content Include="Styles\Dropdownlist\grand_gray\OboutTextBox\images\textbox.png" />
+    <Content Include="Styles\Dropdownlist\grand_gray\OboutTextBox\style.css" />
+    <Content Include="Styles\Dropdownlist\grand_gray\OboutTextBox\style_multiline.css" />
+    <Content Include="Styles\Dropdownlist\plain\OboutButton\images\button.gif" />
+    <Content Include="Styles\Dropdownlist\plain\OboutButton\images\button.png" />
+    <Content Include="Styles\Dropdownlist\plain\OboutButton\images\overlay.gif" />
+    <Content Include="Styles\Dropdownlist\plain\OboutButton\style.css" />
+    <Content Include="Styles\Dropdownlist\plain\OboutCheckBox\images\CheckBox.gif" />
+    <Content Include="Styles\Dropdownlist\plain\OboutCheckBox\images\CheckBox.png" />
+    <Content Include="Styles\Dropdownlist\plain\OboutCheckBox\style.css" />
+    <Content Include="Styles\Dropdownlist\plain\OboutDropDownList\images\drop-down-horizontal.gif" />
+    <Content Include="Styles\Dropdownlist\plain\OboutDropDownList\images\drop-down-horizontal.png" />
+    <Content Include="Styles\Dropdownlist\plain\OboutDropDownList\images\drop-down-vertical.gif" />
+    <Content Include="Styles\Dropdownlist\plain\OboutDropDownList\images\drop-down-vertical.png" />
+    <Content Include="Styles\Dropdownlist\plain\OboutDropDownList\images\horizontal.gif" />
+    <Content Include="Styles\Dropdownlist\plain\OboutDropDownList\images\horizontal.png" />
+    <Content Include="Styles\Dropdownlist\plain\OboutDropDownList\images\lighted.gif" />
+    <Content Include="Styles\Dropdownlist\plain\OboutDropDownList\images\lighted.png" />
+    <Content Include="Styles\Dropdownlist\plain\OboutDropDownList\images\vertical.gif" />
+    <Content Include="Styles\Dropdownlist\plain\OboutDropDownList\images\vertical.png" />
+    <Content Include="Styles\Dropdownlist\plain\OboutDropDownList\style.css" />
+    <Content Include="Styles\Dropdownlist\plain\OboutRadioButton\images\Radio.gif" />
+    <Content Include="Styles\Dropdownlist\plain\OboutRadioButton\images\Radio.png" />
+    <Content Include="Styles\Dropdownlist\plain\OboutRadioButton\style.css" />
+    <Content Include="Styles\Dropdownlist\plain\OboutTextBox\images\textarea-horizontal.gif" />
+    <Content Include="Styles\Dropdownlist\plain\OboutTextBox\images\textarea-horizontal.png" />
+    <Content Include="Styles\Dropdownlist\plain\OboutTextBox\images\textarea-vertical.gif" />
+    <Content Include="Styles\Dropdownlist\plain\OboutTextBox\images\textarea-vertical.png" />
+    <Content Include="Styles\Dropdownlist\plain\OboutTextBox\images\textbox.gif" />
+    <Content Include="Styles\Dropdownlist\plain\OboutTextBox\images\textbox.png" />
+    <Content Include="Styles\Dropdownlist\plain\OboutTextBox\style.css" />
+    <Content Include="Styles\Dropdownlist\plain\OboutTextBox\style_multiline.css" />
+    <Content Include="Styles\Dropdownlist\plain\OboutTextBox\style_multiline_reorganized.css" />
+    <Content Include="Styles\Dropdownlist\premiere_blue\OboutButton\images\button.gif" />
+    <Content Include="Styles\Dropdownlist\premiere_blue\OboutButton\images\button.png" />
+    <Content Include="Styles\Dropdownlist\premiere_blue\OboutButton\images\overlay.gif" />
+    <Content Include="Styles\Dropdownlist\premiere_blue\OboutButton\style.css" />
+    <Content Include="Styles\Dropdownlist\premiere_blue\OboutCheckBox\images\CheckBox.gif" />
+    <Content Include="Styles\Dropdownlist\premiere_blue\OboutCheckBox\images\CheckBox.png" />
+    <Content Include="Styles\Dropdownlist\premiere_blue\OboutCheckBox\style.css" />
+    <Content Include="Styles\Dropdownlist\premiere_blue\OboutDropDownList\images\drop-down-horizontal.gif" />
+    <Content Include="Styles\Dropdownlist\premiere_blue\OboutDropDownList\images\drop-down-horizontal.png" />
+    <Content Include="Styles\Dropdownlist\premiere_blue\OboutDropDownList\images\drop-down-vertical.gif" />
+    <Content Include="Styles\Dropdownlist\premiere_blue\OboutDropDownList\images\drop-down-vertical.png" />
+    <Content Include="Styles\Dropdownlist\premiere_blue\OboutDropDownList\images\horizontal.gif" />
+    <Content Include="Styles\Dropdownlist\premiere_blue\OboutDropDownList\images\horizontal.png" />
+    <Content Include="Styles\Dropdownlist\premiere_blue\OboutDropDownList\images\lighted.gif" />
+    <Content Include="Styles\Dropdownlist\premiere_blue\OboutDropDownList\images\lighted.png" />
+    <Content Include="Styles\Dropdownlist\premiere_blue\OboutDropDownList\images\vertical.gif" />
+    <Content Include="Styles\Dropdownlist\premiere_blue\OboutDropDownList\images\vertical.png" />
+    <Content Include="Styles\Dropdownlist\premiere_blue\OboutDropDownList\style.css" />
+    <Content Include="Styles\Dropdownlist\premiere_blue\OboutRadioButton\images\Radio.gif" />
+    <Content Include="Styles\Dropdownlist\premiere_blue\OboutRadioButton\images\Radio.png" />
+    <Content Include="Styles\Dropdownlist\premiere_blue\OboutRadioButton\style.css" />
+    <Content Include="Styles\Dropdownlist\premiere_blue\OboutTextBox\images\textarea-horizontal.gif" />
+    <Content Include="Styles\Dropdownlist\premiere_blue\OboutTextBox\images\textarea-horizontal.png" />
+    <Content Include="Styles\Dropdownlist\premiere_blue\OboutTextBox\images\textarea-vertical.gif" />
+    <Content Include="Styles\Dropdownlist\premiere_blue\OboutTextBox\images\textarea-vertical.png" />
+    <Content Include="Styles\Dropdownlist\premiere_blue\OboutTextBox\images\textbox.gif" />
+    <Content Include="Styles\Dropdownlist\premiere_blue\OboutTextBox\images\textbox.png" />
+    <Content Include="Styles\Dropdownlist\premiere_blue\OboutTextBox\style.css" />
+    <Content Include="Styles\Dropdownlist\premiere_blue\OboutTextBox\style_multiline.css" />
+    <Content Include="Styles\Futura\bg_menuItem.gif" />
+    <Content Include="Styles\Futura\bg_menuItemOver.gif" />
+    <Content Include="Styles\Futura\bg_separator.gif" />
+    <Content Include="Styles\Futura\style.css" />
+    <Content Include="Styles\Futura\submenu.gif" />
+    <Content Include="Styles\Futura\submenu_white.gif" />
+    <Content Include="Styles\Horizontal1\margin.gif" />
+    <Content Include="Styles\Horizontal1\mid.gif" />
+    <Content Include="Styles\Horizontal1\mid_over.gif" />
+    <Content Include="Styles\Horizontal1\style.css" />
+    <Content Include="Styles\Horizontal1\submenu.gif" />
+    <Content Include="Styles\Horizontal1\submenu_parent.gif" />
+    <Content Include="Styles\Horizontal1\submenu_white.gif" />
+    <Content Include="Styles\Horizontal1\s_bg.gif" />
+    <Content Include="Styles\Horizontal2\diagonal_bw.gif" />
+    <Content Include="Styles\Horizontal2\diagonal_wb.gif" />
+    <Content Include="Styles\Horizontal2\style.css" />
+    <Content Include="Styles\Horizontal2\submenu.gif" />
+    <Content Include="Styles\Horizontal2\submenu_white.gif" />
+    <Content Include="Styles\Horizontal3\style.css" />
+    <Content Include="Styles\Horizontal3\submenu.gif" />
+    <Content Include="Styles\Horizontal3\submenu_white.gif" />
+    <Content Include="Styles\Horizontal4\style.css" />
+    <Content Include="Styles\Horizontal4\submenu.gif" />
+    <Content Include="Styles\Horizontal5\bg.gif" />
+    <Content Include="Styles\Horizontal5\bg_a.gif" />
+    <Content Include="Styles\Horizontal5\gag.gif" />
+    <Content Include="Styles\Horizontal5\sep.gif" />
+    <Content Include="Styles\Horizontal5\style.css" />
+    <Content Include="Styles\Horizontal5\submenu.gif" />
+    <Content Include="Styles\Horizontal5\submenu_white.gif" />
+    <Content Include="Styles\Horizontal5\s_bg.gif" />
+    <Content Include="Styles\Horizontal6\arrow.gif" />
+    <Content Include="Styles\Horizontal6\arrow_a.gif" />
+    <Content Include="Styles\Horizontal6\bg.gif" />
+    <Content Include="Styles\Horizontal6\bg_a.gif" />
+    <Content Include="Styles\Horizontal6\gag.gif" />
+    <Content Include="Styles\Horizontal6\gagf.gif" />
+    <Content Include="Styles\Horizontal6\gagl.gif" />
+    <Content Include="Styles\Horizontal6\gagl_a.gif" />
+    <Content Include="Styles\Horizontal6\il.gif" />
+    <Content Include="Styles\Horizontal6\ir.gif" />
+    <Content Include="Styles\Horizontal6\sep.gif" />
+    <Content Include="Styles\Horizontal6\style.css" />
+    <Content Include="Styles\Horizontal6\submenu.gif" />
+    <Content Include="Styles\Horizontal6\submenu_white.gif" />
+    <Content Include="Styles\Horizontal6\s_bg.gif" />
+    <Content Include="Styles\Horizontal7\bg.gif" />
+    <Content Include="Styles\Horizontal7\bg_a.gif" />
+    <Content Include="Styles\Horizontal7\gagf.gif" />
+    <Content Include="Styles\Horizontal7\gagl.gif" />
+    <Content Include="Styles\Horizontal7\il.gif" />
+    <Content Include="Styles\Horizontal7\sep.gif" />
+    <Content Include="Styles\Horizontal7\style.css" />
+    <Content Include="Styles\Horizontal7\submenu.gif" />
+    <Content Include="Styles\Horizontal7\submenu_white.gif" />
+    <Content Include="Styles\Horizontal7\s_bg.gif" />
+    <Content Include="Styles\Horizontal8\bg.gif" />
+    <Content Include="Styles\Horizontal8\bg_a.gif" />
+    <Content Include="Styles\Horizontal8\gagf.gif" />
+    <Content Include="Styles\Horizontal8\gagl.gif" />
+    <Content Include="Styles\Horizontal8\sep.gif" />
+    <Content Include="Styles\Horizontal8\style.css" />
+    <Content Include="Styles\Horizontal8\submenu.gif" />
+    <Content Include="Styles\Horizontal8\submenu_white.gif" />
+    <Content Include="Styles\Horizontal8\s_bg.gif" />
+    <Content Include="Styles\Horizontal8\s_bg_a.gif" />
+    <Content Include="Styles\Horizontal9\le_1\bg_em_1.jpg" />
+    <Content Include="Styles\Horizontal9\le_1\style.css" />
+    <Content Include="Styles\Horizontal9\le_1\submenu.gif" />
+    <Content Include="Styles\Horizontal9\le_2\bg_em_2.JPG" />
+    <Content Include="Styles\Horizontal9\le_2\style.css" />
+    <Content Include="Styles\Horizontal9\le_2\submenu.gif" />
+    <Content Include="Styles\Horizontal9\le_3\bg_em_3.JPG" />
+    <Content Include="Styles\Horizontal9\le_3\style.css" />
+    <Content Include="Styles\Horizontal9\le_3\submenu.gif" />
+    <Content Include="Styles\Horizontal9\le_4\bg_em_4.JPG" />
+    <Content Include="Styles\Horizontal9\le_4\style.css" />
+    <Content Include="Styles\Horizontal9\le_4\submenu.gif" />
+    <Content Include="Styles\Horizontal9\le_5\bg_em_5.JPG" />
+    <Content Include="Styles\Horizontal9\le_5\style.css" />
+    <Content Include="Styles\Horizontal9\le_5\submenu.gif" />
+    <Content Include="Styles\Horizontal9\submenu_white.gif" />
+    <Content Include="Styles\Horizontalrtl\margin.gif" />
+    <Content Include="Styles\Horizontalrtl\mid.gif" />
+    <Content Include="Styles\Horizontalrtl\mid_over.gif" />
+    <Content Include="Styles\Horizontalrtl\style.css" />
+    <Content Include="Styles\Horizontalrtl\submenu.gif" />
+    <Content Include="Styles\Horizontalrtl\submenu_parent.gif" />
+    <Content Include="Styles\Horizontalrtl\submenu_white.gif" />
+    <Content Include="Styles\Horizontalrtl\s_bg.gif" />
+    <Content Include="Styles\MSDN2\style.css" />
+    <Content Include="Styles\MSDN\style.css" />
+    <Content Include="Styles\Multiple\bg_separator_5.gif" />
+    <Content Include="Styles\Multiple\margin.gif" />
+    <Content Include="Styles\Multiple\mid.gif" />
+    <Content Include="Styles\Multiple\mid_over.gif" />
+    <Content Include="Styles\Multiple\style.css" />
+    <Content Include="Styles\Multiple\submenu.gif" />
+    <Content Include="Styles\Multiple\submenu_4.gif" />
+    <Content Include="Styles\Multiple\submenu_5.gif" />
+    <Content Include="Styles\Multiple\submenu_parent.gif" />
+    <Content Include="Styles\Multiple\submenu_white.gif" />
+    <Content Include="Styles\Multiple\submenu_white_4.gif" />
+    <Content Include="Styles\Multiple\submenu_white_5.gif" />
+    <Content Include="Styles\Multiple\s_bg.gif" />
+    <Content Include="Styles\Multiple\s_bg_4.gif" />
+    <Content Include="Styles\RightToLeft\style.css" />
+    <Content Include="Styles\RightToLeft\submenu.gif" />
+    <Content Include="Styles\style.css" />
+    <Content Include="Styles\Style10\style.css" />
+    <Content Include="Styles\Style10\submenu.gif" />
+    <Content Include="Styles\Style10\submenu_white.gif" />
+    <Content Include="Styles\Style13\style.css" />
+    <Content Include="Styles\Style13\submenu.gif" />
+    <Content Include="Styles\Style13\submenu_white.gif" />
+    <Content Include="Styles\Style1\style.css" />
+    <Content Include="Styles\Style1\submenu.gif" />
+    <Content Include="Styles\Style1\submenu_white.gif" />
+    <Content Include="Styles\style1_multiple_menus\margin.gif" />
+    <Content Include="Styles\style1_multiple_menus\mid.gif" />
+    <Content Include="Styles\style1_multiple_menus\mid_over.gif" />
+    <Content Include="Styles\style1_multiple_menus\style.css" />
+    <Content Include="Styles\style1_multiple_menus\submenu.gif" />
+    <Content Include="Styles\style1_multiple_menus\submenu_white.gif" />
+    <Content Include="Styles\style1_multiple_menus\s_bg.gif" />
+    <Content Include="Styles\Style2\style.css" />
+    <Content Include="Styles\Style2\submenu.gif" />
+    <Content Include="Styles\Style2\submenu_white.gif" />
+    <Content Include="Styles\style2_multiple_menus\margin.gif" />
+    <Content Include="Styles\style2_multiple_menus\mid.gif" />
+    <Content Include="Styles\style2_multiple_menus\mid_over.gif" />
+    <Content Include="Styles\style2_multiple_menus\style.css" />
+    <Content Include="Styles\style2_multiple_menus\submenu.gif" />
+    <Content Include="Styles\style2_multiple_menus\submenu_parent.gif" />
+    <Content Include="Styles\style2_multiple_menus\submenu_white.gif" />
+    <Content Include="Styles\style2_multiple_menus\s_bg.gif" />
+    <Content Include="Styles\Style3\style.css" />
+    <Content Include="Styles\Style3\submenu.gif" />
+    <Content Include="Styles\Style3\submenu_white.gif" />
+    <Content Include="Styles\Style9\style.css" />
+    <Content Include="Styles\Style9\submenu.gif" />
+    <Content Include="Styles\Style9\submenu_white.gif" />
+    <Content Include="Styles\submenu.gif" />
+    <Content Include="Styles\TabStrip10\roundcorner_left.gif" />
+    <Content Include="Styles\TabStrip10\roundcorner_left_over.gif" />
+    <Content Include="Styles\TabStrip10\roundcorner_mid.gif" />
+    <Content Include="Styles\TabStrip10\roundcorner_mid_over.gif" />
+    <Content Include="Styles\TabStrip10\roundcorner_right.gif" />
+    <Content Include="Styles\TabStrip10\roundcorner_right_over.gif" />
+    <Content Include="Styles\TabStrip10\style.css" />
+    <Content Include="Styles\TabStrip11\roundcorner_left.gif" />
+    <Content Include="Styles\TabStrip11\roundcorner_left_over.gif" />
+    <Content Include="Styles\TabStrip11\roundcorner_mid.gif" />
+    <Content Include="Styles\TabStrip11\roundcorner_mid_over.gif" />
+    <Content Include="Styles\TabStrip11\roundcorner_right.gif" />
+    <Content Include="Styles\TabStrip11\roundcorner_right_over.gif" />
+    <Content Include="Styles\TabStrip11\style.css" />
+    <Content Include="Styles\TabStrip12\roundcorner_left.gif" />
+    <Content Include="Styles\TabStrip12\roundcorner_left_over.gif" />
+    <Content Include="Styles\TabStrip12\roundcorner_mid.gif" />
+    <Content Include="Styles\TabStrip12\roundcorner_mid_over.gif" />
+    <Content Include="Styles\TabStrip12\roundcorner_right.gif" />
+    <Content Include="Styles\TabStrip12\roundcorner_right_over.gif" />
+    <Content Include="Styles\TabStrip12\separator.gif" />
+    <Content Include="Styles\TabStrip12\style.css" />
+    <Content Include="Styles\TabStrip1\roundcorner_left.gif" />
+    <Content Include="Styles\TabStrip1\roundcorner_left_over.gif" />
+    <Content Include="Styles\TabStrip1\roundcorner_mid.gif" />
+    <Content Include="Styles\TabStrip1\roundcorner_mid_over.gif" />
+    <Content Include="Styles\TabStrip1\roundcorner_right.gif" />
+    <Content Include="Styles\TabStrip1\roundcorner_right_over.gif" />
+    <Content Include="Styles\TabStrip1\style.css" />
+    <Content Include="Styles\TabStrip1\submenu.gif" />
+    <Content Include="Styles\TabStrip2\roundcorner_left.gif" />
+    <Content Include="Styles\TabStrip2\roundcorner_left_over.gif" />
+    <Content Include="Styles\TabStrip2\roundcorner_mid.gif" />
+    <Content Include="Styles\TabStrip2\roundcorner_mid_over.gif" />
+    <Content Include="Styles\TabStrip2\roundcorner_right.gif" />
+    <Content Include="Styles\TabStrip2\roundcorner_right_over.gif" />
+    <Content Include="Styles\TabStrip2\style.css" />
+    <Content Include="Styles\TabStrip3\roundcorner_left.gif" />
+    <Content Include="Styles\TabStrip3\roundcorner_left_over.gif" />
+    <Content Include="Styles\TabStrip3\roundcorner_mid.gif" />
+    <Content Include="Styles\TabStrip3\roundcorner_mid_over.gif" />
+    <Content Include="Styles\TabStrip3\roundcorner_right.gif" />
+    <Content Include="Styles\TabStrip3\roundcorner_right_over.gif" />
+    <Content Include="Styles\TabStrip3\style.css" />
+    <Content Include="Styles\TabStrip4\roundcorner_left.gif" />
+    <Content Include="Styles\TabStrip4\roundcorner_left_over.gif" />
+    <Content Include="Styles\TabStrip4\roundcorner_mid.gif" />
+    <Content Include="Styles\TabStrip4\roundcorner_mid_over.gif" />
+    <Content Include="Styles\TabStrip4\roundcorner_right.gif" />
+    <Content Include="Styles\TabStrip4\roundcorner_right_over.gif" />
+    <Content Include="Styles\TabStrip4\style.css" />
+    <Content Include="Styles\TabStrip5\roundcorner_left.gif" />
+    <Content Include="Styles\TabStrip5\roundcorner_left_over.gif" />
+    <Content Include="Styles\TabStrip5\roundcorner_mid.gif" />
+    <Content Include="Styles\TabStrip5\roundcorner_mid_over.gif" />
+    <Content Include="Styles\TabStrip5\roundcorner_right.gif" />
+    <Content Include="Styles\TabStrip5\roundcorner_right_over.gif" />
+    <Content Include="Styles\TabStrip5\style.css" />
+    <Content Include="Styles\TabStrip6\roundcorner_left.gif" />
+    <Content Include="Styles\TabStrip6\roundcorner_left_over.gif" />
+    <Content Include="Styles\TabStrip6\roundcorner_mid.gif" />
+    <Content Include="Styles\TabStrip6\roundcorner_mid_over.gif" />
+    <Content Include="Styles\TabStrip6\roundcorner_right.gif" />
+    <Content Include="Styles\TabStrip6\roundcorner_right_over.gif" />
+    <Content Include="Styles\TabStrip6\style.css" />
+    <Content Include="Styles\TabStrip7\roundcorner_left.gif" />
+    <Content Include="Styles\TabStrip7\roundcorner_left_over.gif" />
+    <Content Include="Styles\TabStrip7\roundcorner_mid.gif" />
+    <Content Include="Styles\TabStrip7\roundcorner_mid_over.gif" />
+    <Content Include="Styles\TabStrip7\roundcorner_right.gif" />
+    <Content Include="Styles\TabStrip7\roundcorner_right_over.gif" />
+    <Content Include="Styles\TabStrip7\style.css" />
+    <Content Include="Styles\TabStrip8\roundcorner_left.gif" />
+    <Content Include="Styles\TabStrip8\roundcorner_left_over.gif" />
+    <Content Include="Styles\TabStrip8\roundcorner_mid.gif" />
+    <Content Include="Styles\TabStrip8\roundcorner_mid_over.gif" />
+    <Content Include="Styles\TabStrip8\roundcorner_right.gif" />
+    <Content Include="Styles\TabStrip8\roundcorner_right_over.gif" />
+    <Content Include="Styles\TabStrip8\style.css" />
+    <Content Include="Styles\TabStrip9\roundcorner_left.gif" />
+    <Content Include="Styles\TabStrip9\roundcorner_left_over.gif" />
+    <Content Include="Styles\TabStrip9\roundcorner_mid.gif" />
+    <Content Include="Styles\TabStrip9\roundcorner_mid_over.gif" />
+    <Content Include="Styles\TabStrip9\roundcorner_right.gif" />
+    <Content Include="Styles\TabStrip9\roundcorner_right_over.gif" />
+    <Content Include="Styles\TabStrip9\style.css" />
+    <Content Include="Styles\TabStrip9\Untitled-1 copy.gif" />
+    <Content Include="Styles\TabStripHorizontal\roundcorner_left.jpg" />
+    <Content Include="Styles\TabStripHorizontal\roundcorner_left_over.jpg" />
+    <Content Include="Styles\TabStripHorizontal\roundcorner_mid.jpg" />
+    <Content Include="Styles\TabStripHorizontal\roundcorner_mid_over.jpg" />
+    <Content Include="Styles\TabStripHorizontal\roundcorner_right.jpg" />
+    <Content Include="Styles\TabStripHorizontal\roundcorner_right_over.jpg" />
+    <Content Include="Styles\TabStripHorizontal\style.css" />
+    <Content Include="Styles\TabStripHorizontal\submenu.gif" />
+    <Content Include="Styles\TabStripYahoo\roundcorner_left.gif" />
+    <Content Include="Styles\TabStripYahoo\roundcorner_left_over.gif" />
+    <Content Include="Styles\TabStripYahoo\roundcorner_mid.gif" />
+    <Content Include="Styles\TabStripYahoo\roundcorner_mid_over.gif" />
+    <Content Include="Styles\TabStripYahoo\roundcorner_right.gif" />
+    <Content Include="Styles\TabStripYahoo\roundcorner_right_over.gif" />
+    <Content Include="Styles\TabStripYahoo\style.css" />
+    <Content Include="Styles\Transparent\bg.gif" />
+    <Content Include="Styles\Transparent\bg_a.gif" />
+    <Content Include="Styles\Transparent\gag.gif" />
+    <Content Include="Styles\Transparent\sep.gif" />
+    <Content Include="Styles\Transparent\style.css" />
+    <Content Include="Styles\Transparent\submenu.gif" />
+    <Content Include="Styles\Transparent\submenu_white.gif" />
+    <Content Include="Styles\Transparent\s_bg.gif" />
+    <Content Include="Styles\TSH_Horizontal\margin.gif" />
+    <Content Include="Styles\TSH_Horizontal\mid.gif" />
+    <Content Include="Styles\TSH_Horizontal\mid_over.gif" />
+    <Content Include="Styles\TSH_Horizontal\style.css" />
+    <Content Include="Styles\TSH_Horizontal\submenu.gif" />
+    <Content Include="Styles\TSH_Horizontal\submenu_parent.gif" />
+    <Content Include="Styles\TSH_Horizontal\submenu_white.gif" />
+    <Content Include="Styles\TSH_Horizontal\s_bg.gif" />
+    <Content Include="Styles\TSH_TabStrip\roundcorner_left.jpg" />
+    <Content Include="Styles\TSH_TabStrip\roundcorner_left_over.jpg" />
+    <Content Include="Styles\TSH_TabStrip\roundcorner_mid.jpg" />
+    <Content Include="Styles\TSH_TabStrip\roundcorner_mid_over.jpg" />
+    <Content Include="Styles\TSH_TabStrip\roundcorner_right.jpg" />
+    <Content Include="Styles\TSH_TabStrip\roundcorner_right_over.jpg" />
+    <Content Include="Styles\TSH_TabStrip\style.css" />
+    <Content Include="Styles\TSH_TabStrip\submenu.gif" />
+    <Content Include="Styles\Vertical1\style.css" />
+    <Content Include="Styles\Vertical1\submenu.gif" />
+    <Content Include="Styles\Verticalrtl\style.css" />
+    <Content Include="Styles\Verticalrtl\submenu.gif" />
+    <Content Include="Styles\Vertical_Multiple\margin.gif" />
+    <Content Include="Styles\Vertical_Multiple\mid.gif" />
+    <Content Include="Styles\Vertical_Multiple\mid_over.gif" />
+    <Content Include="Styles\Vertical_Multiple\style.css" />
+    <Content Include="Styles\Vertical_Multiple\submenu.gif" />
+    <Content Include="Styles\Vertical_Multiple\submenu_parent.gif" />
+    <Content Include="Styles\Vertical_Multiple\submenu_white.gif" />
+    <Content Include="Styles\Vertical_Multiple\s_bg.gif" />
+    <Content Include="Styles\Vsnet\bg_menu.gif" />
+    <Content Include="Styles\Vsnet\bg_separator.gif" />
+    <Content Include="Styles\Vsnet\style.css" />
+    <Content Include="Styles\Vsnet\submenu.gif" />
+    <Content Include="Styles\Vsnet\submenu_white.gif" />
+    <Content Include="Styles\WindowsXP\bg_separator.gif" />
+    <Content Include="Styles\WindowsXP\style.css" />
+    <Content Include="Styles\WindowsXP\submenu.gif" />
+    <Content Include="Styles\WindowsXP\submenu_white.gif" />
+    <Content Include="Styles\windowsXP_Window\bg_separator.gif" />
+    <Content Include="Styles\windowsXP_Window\style.css" />
+    <Content Include="Styles\windowsXP_Window\submenu.gif" />
+    <Content Include="Styles\windowsXP_Window\submenu_white.gif" />
+    <Content Include="Styles\Windows\bg_separator.gif" />
+    <Content Include="Styles\Windows\style.css" />
+    <Content Include="Styles\Windows\submenu.gif" />
+    <Content Include="Styles\Windows\submenu_white.gif" />
+    <Content Include="test.aspx" />
+    <Content Include="TestCCB.aspx" />
+    <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Bundle.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\jquery-1.9.1.min.map" />
+    <None Include="Scripts\_references.js" />
+    <Content Include="Site.Mobile.Master" />
+    <Content Include="Styles\CustomeStyle\Thumbs.db" />
+    <Content Include="Styles\Dropdownlist\grand_gray\OboutButton\images\Thumbs.db" />
+    <Content Include="Styles\Dropdownlist\grand_gray\OboutTextBox\images\Thumbs.db" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\MenuAccess.aspx.cs">
+      <DependentUpon>MenuAccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\MenuAccess.aspx.designer.cs">
+      <DependentUpon>MenuAccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\User.aspx.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\User.aspx.designer.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\AuthConfig.cs" />
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.cs">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.designer.cs">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.cs">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.designer.cs">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default2.aspx.cs">
+      <DependentUpon>Default2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default2.aspx.designer.cs">
+      <DependentUpon>Default2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\Schedule.aspx.cs">
+      <DependentUpon>Schedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee\Schedule.aspx.designer.cs">
+      <DependentUpon>Schedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\Timesheet.aspx.cs">
+      <DependentUpon>Timesheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee\Timesheet.aspx.designer.cs">
+      <DependentUpon>Timesheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\Timesheet3.aspx.cs">
+      <DependentUpon>Timesheet3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee\Timesheet3.aspx.designer.cs">
+      <DependentUpon>Timesheet3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\VacationCalendar.aspx.cs">
+      <DependentUpon>VacationCalendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee\VacationCalendar.aspx.designer.cs">
+      <DependentUpon>VacationCalendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\VacationRequest.aspx.cs">
+      <DependentUpon>VacationRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee\VacationRequest.aspx.designer.cs">
+      <DependentUpon>VacationRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Finances\BenevolenceFund.aspx.cs">
+      <DependentUpon>BenevolenceFund.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Finances\BenevolenceFund.aspx.designer.cs">
+      <DependentUpon>BenevolenceFund.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Finances\BudgetForm.ascx.cs">
+      <DependentUpon>BudgetForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Finances\BudgetForm.ascx.designer.cs">
+      <DependentUpon>BudgetForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Finances\BudgetFormTest.aspx.cs">
+      <DependentUpon>BudgetFormTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Finances\BudgetFormTest.aspx.designer.cs">
+      <DependentUpon>BudgetFormTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Finances\CBCDedicated.aspx.cs">
+      <DependentUpon>CBCDedicated.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Finances\CBCDedicated.aspx.designer.cs">
+      <DependentUpon>CBCDedicated.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Finances\CBCExpense.aspx.cs">
+      <DependentUpon>CBCExpense.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Finances\CBCExpense.aspx.designer.cs">
+      <DependentUpon>CBCExpense.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Finances\CBCIncome.aspx.cs">
+      <DependentUpon>CBCIncome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Finances\CBCIncome.aspx.designer.cs">
+      <DependentUpon>CBCIncome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Finances\DedicatedFund.aspx.cs">
+      <DependentUpon>DedicatedFund.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Finances\DedicatedFund.aspx.designer.cs">
+      <DependentUpon>DedicatedFund.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Finances\GFExpenseMTD.aspx.cs">
+      <DependentUpon>GFExpenseMTD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Finances\GFExpenseMTD.aspx.designer.cs">
+      <DependentUpon>GFExpenseMTD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Finances\GFExpense.aspx.cs">
+      <DependentUpon>GFExpense.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Finances\GFExpense.aspx.designer.cs">
+      <DependentUpon>GFExpense.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Finances\GFIncExpReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Finances\PayrollReport.aspx.cs">
+      <DependentUpon>PayrollReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Finances\PayrollReport.aspx.designer.cs">
+      <DependentUpon>PayrollReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Finances\GFIncomeMTD.aspx.cs">
+      <DependentUpon>GFIncomeMTD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Finances\GFIncomeMTD.aspx.designer.cs">
+      <DependentUpon>GFIncomeMTD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Finances\GFIncome.aspx.cs">
+      <DependentUpon>GFIncome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Finances\GFIncome.aspx.designer.cs">
+      <DependentUpon>GFIncome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Finances\MinistryAccounts.aspx.cs">
+      <DependentUpon>MinistryAccounts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Finances\MinistryAccounts.aspx.designer.cs">
+      <DependentUpon>MinistryAccounts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Finances\MinistryDedicatedAccounts.aspx.cs">
+      <DependentUpon>MinistryDedicatedAccounts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Finances\MinistryDedicatedAccounts.aspx.designer.cs">
+      <DependentUpon>MinistryDedicatedAccounts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Finances\PayPeriod.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Finances\test.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Finances\test.Designer.cs">
+      <DependentUpon>test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Logic\Helper.cs" />
+    <Compile Include="Logic\TBUser.cs" />
+    <Compile Include="Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Metrics\Attendance.aspx.cs">
+      <DependentUpon>Attendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Metrics\Attendance.aspx.designer.cs">
+      <DependentUpon>Attendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Metrics\Offerings.aspx.cs">
+      <DependentUpon>Offerings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Metrics\Offerings.aspx.designer.cs">
+      <DependentUpon>Offerings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AspApplication.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AspMembership.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AspProfile.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AspRole.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AspUser.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AttendanceCount.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Congregation.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DateList.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\EECategory.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\EECompensation.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\EEType.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\fxMenu.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\get_EE_Balances_Result.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\get_TimesheetEntries_Result.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ins_secUsers_Result.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Menu.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Offering.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\qryService.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\qrySunday.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Role.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Service.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sunday.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TBBF.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TBBF.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TBBF.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TBBF.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TBBF.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TBUser.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TORequest.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TSEntry.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TSWeek.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\t_acct.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\t_acct_beg_bal.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\t_acct_budget.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\t_acct_fiscal_month.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\t_acct_fiscal_year.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\t_acct_fund.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\t_acct_trans.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\t_acct_trans_txfr.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\t_acct_trans_type.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\t_acct_type.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\t_acct_user.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\t_date_month.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\t_date_year.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\t_sec_role_type.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\t_sec_user.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\t_sec_user_role.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\usp_tblTSEntryUpdate_Result.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\vwAttachment.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\vwBudgetMaster.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\vwClass.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\vwExpenseDept.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\vwGFExpenseDept.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\vwGFIncomeAcctBudget.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\vwGFIncomeDept.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\vwIncomeDept.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\vwTransMaster.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\vw_ExpenseDept_Budget_By_FY.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\vw_GF_ExpenseAcct_Budget_By_FY.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\vw_GF_ExpenseDept_Budget_By_FY.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\vw_GF_IncomeDept_Budget_By_FY.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\vw_IncomeDept_Budget_By_FY.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\vw_person_member_type.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Week.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\YearType.cs">
+      <DependentUpon>TBBF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.designer.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="TBCA\TBCA-Expense.aspx.cs">
+      <DependentUpon>TBCA-Expense.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TBCA\TBCA-Expense.aspx.designer.cs">
+      <DependentUpon>TBCA-Expense.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TBCA\TBCA-Income.aspx.cs">
+      <DependentUpon>TBCA-Income.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TBCA\TBCA-Income.aspx.designer.cs">
+      <DependentUpon>TBCA-Income.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestCCB.aspx.cs">
+      <DependentUpon>TestCCB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestCCB.aspx.designer.cs">
+      <DependentUpon>TestCCB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkOrder\WOByCategory.aspx.cs">
+      <DependentUpon>WOByCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkOrder\WOByCategory.aspx.designer.cs">
+      <DependentUpon>WOByCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkOrder\WO_Completed.aspx.cs">
+      <DependentUpon>WO_Completed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkOrder\WO_Completed.aspx.designer.cs">
+      <DependentUpon>WO_Completed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkOrder\WO_Approved.aspx.cs">
+      <DependentUpon>WO_Approved.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkOrder\WO_Approved.aspx.designer.cs">
+      <DependentUpon>WO_Approved.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkOrder\WO_Pending.aspx.cs">
+      <DependentUpon>WO_Pending.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkOrder\WO_Pending.aspx.designer.cs">
+      <DependentUpon>WO_Pending.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkOrder\WOByStatus.aspx.cs">
+      <DependentUpon>WOByStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkOrder\WOByStatus.aspx.designer.cs">
+      <DependentUpon>WOByStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkOrder\WorkOrder.aspx.cs">
+      <DependentUpon>WorkOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkOrder\WorkOrder.aspx.designer.cs">
+      <DependentUpon>WorkOrder.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Finances\GFIncExpReport.resx">
+      <DependentUpon>GFIncExpReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finances\PayPeriod.resx">
+      <DependentUpon>PayPeriod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finances\test.resx">
+      <DependentUpon>test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54042</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/TBOffice</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <UserProperties UseJQuerySupport="True" UseAjaxifiedTemplates="True" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

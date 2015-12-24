@@ -1,0 +1,111 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="TBOffice.Main" %>
+
+<%@ Register Assembly="obout_EasyMenu_Pro" Namespace="OboutInc.EasyMenu_Pro" TagPrefix="oem" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+        .td-title{
+            padding: 10px;
+            font-family:Tahoma;font-size:18px; font-weight:bold; color:maroon; 
+            width:50%;
+            text-align:left;
+            background-color:lightgray;}
+        .td-login{
+            padding: 10px; 
+            width:50%;text-align:right;
+            background-color:lightgray;}
+        .td-login a {
+            font-family:Tahoma;font-size:16px; 
+            font-weight:bold; 
+            color:navy; 
+            }
+    </style>
+    <style type="text/css">
+       .ParentMenu
+       {
+          padding-right: 0px !important;
+       }
+    </style>
+    
+
+        <asp:ContentPlaceHolder ID="head" runat="server">
+
+
+    </asp:ContentPlaceHolder>
+</head>
+<body style="padding: 0px; margin:0px;">
+    <form id="form1" runat="server">
+<table style="margin: 0px; width:100%; border-collapse: collapse;">
+    <tr>
+        <td class="td-title">TB Office</td>
+        <td class="td-login">
+            <asp:LoginView runat="server" ViewStateMode="Disabled">
+                <AnonymousTemplate>
+                    <a id="loginLink" runat="server" href="~/Account/Login">Log in</a>
+                </AnonymousTemplate>
+                <LoggedInTemplate>
+                        Hello, <a runat="server" class="username" href="~/Account/Manage" title="Manage your account">
+                            <asp:LoginName runat="server" CssClass="username" /></a>!
+                        <asp:LoginStatus ID="btnLogout" runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/Account/Login.aspx" OnLoggedOut="Unnamed_LoggedOut" />
+                </LoggedInTemplate>
+            </asp:LoginView>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="background-color:lightgray; padding-left:5px;">
+
+
+<div style="width:100%; padding-left: 0px; padding-right: 1px !important;" class="ParentMenu">
+<div style="width:100%;" class="ParentItem">
+
+        <oem:EasyMenu Position="Horizontal" StyleFolder="styles/horizontal7" id="EasyMenuMain" 
+            runat="server" ShowEvent="Always" Width="500" CSSMenu="ParentMenu"  
+            DataSourceID="dsMenu" DataIdField="MenuID" DataTextField="ShortDesc" DataUrlField="NavigateUrl" DataParentIdField="ParentMenuID" 
+            SubMenuPlaceHolderID="EasyMenuItemsContainer">
+        <CSSClassesCollection>
+			<oem:CSSClasses ObjectType="OboutInc.EasyMenu_Pro.MenuItem" ComponentSubMenuCellOver="ParentItemSubMenuCellOver"
+				ComponentContentCell="ParentItemContentCell" Component="ParentItem" ComponentSubMenuCell="ParentItemSubMenuCell"
+				ComponentIconCellOver="ParentItemIconCellOver" ComponentIconCell="ParentItemIconCell"
+				ComponentOver="ParentItemOver" ComponentContentCellOver="ParentItemContentCellOver"></oem:CSSClasses>
+			<oem:CSSClasses ObjectType="OboutInc.EasyMenu_Pro.MenuSeparator" ComponentSubMenuCellOver="ParentSeparatorSubMenuCellOver"
+				ComponentContentCell="ParentSeparatorContentCell" Component="ParentSeparator"
+				ComponentSubMenuCell="ParentSeparatorSubMenuCell" ComponentIconCellOver="ParentSeparatorIconCellOver"
+				ComponentIconCell="ParentSeparatorIconCell" ComponentOver="ParentSeparatorOver"
+				ComponentContentCellOver="ParentSeparatorContentCellOver"></oem:CSSClasses>
+		</CSSClassesCollection>
+        <CommonSubMenuProperties Align="Under" Width="165" OffsetHorizontal="2" ShowEvent = "MouseOver" StyleFolder="styles/horizontal7" RepeatColumns="1" Position="Vertical"  />
+        </oem:EasyMenu>
+</div></div>
+            <asp:PlaceHolder ID="EasyMenuItemsContainer" runat="server"></asp:PlaceHolder>
+            <asp:HiddenField ID="hidUserID" runat="server" />                        
+            <asp:SqlDataSource ID="dsMenu" runat="server" ConnectionString='<%$ ConnectionStrings:TBBF %>'
+                SelectCommand="SELECT DISTINCT
+	                    m.[MenuID], 
+	                    ISNULL(m.[ParentMenuID],0) AS [ParentMenuID], 
+	                    m.[ShortDesc], 
+	                    m.[NavigateUrl] 
+                    FROM [secMenu] m 
+		                    INNER JOIN secMenuRoles mr ON m.menuid = mr.MenuID
+		                    INNER JOIN secUserRoles ur ON mr.RoldID = ur.RoleID
+                    WHERE ur.UserID = @UserID
+                    ORDER BY m.[MenuID]">
+                <SelectParameters>
+                    <asp:ControlParameter ControlID="hidUserID" PropertyName="Value" Name="UserID" />
+                </SelectParameters>
+            </asp:SqlDataSource>
+        </td>
+    </tr>
+</table>
+
+    <div>
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

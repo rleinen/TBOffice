@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TBOfficeModelStoreContainer" CdmEntityContainer="TBBFEntities">
+    <EntitySetMapping Name="AspApplications">
+      <EntityTypeMapping TypeName="TBOffice.Model.AspApplication">
+        <MappingFragment StoreEntitySet="Applications">
+          <ScalarProperty Name="ApplicationName" ColumnName="ApplicationName" />
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspMemberships">
+      <EntityTypeMapping TypeName="TBOffice.Model.AspMembership">
+        <MappingFragment StoreEntitySet="Memberships">
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="PasswordFormat" ColumnName="PasswordFormat" />
+          <ScalarProperty Name="PasswordSalt" ColumnName="PasswordSalt" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="PasswordQuestion" ColumnName="PasswordQuestion" />
+          <ScalarProperty Name="PasswordAnswer" ColumnName="PasswordAnswer" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="IsLockedOut" ColumnName="IsLockedOut" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="LastLoginDate" ColumnName="LastLoginDate" />
+          <ScalarProperty Name="LastPasswordChangedDate" ColumnName="LastPasswordChangedDate" />
+          <ScalarProperty Name="LastLockoutDate" ColumnName="LastLockoutDate" />
+          <ScalarProperty Name="FailedPasswordAttemptCount" ColumnName="FailedPasswordAttemptCount" />
+          <ScalarProperty Name="FailedPasswordAttemptWindowStart" ColumnName="FailedPasswordAttemptWindowStart" />
+          <ScalarProperty Name="FailedPasswordAnswerAttemptCount" ColumnName="FailedPasswordAnswerAttemptCount" />
+          <ScalarProperty Name="FailedPasswordAnswerAttemptWindowsStart" ColumnName="FailedPasswordAnswerAttemptWindowsStart" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspProfiles">
+      <EntityTypeMapping TypeName="TBOffice.Model.AspProfile">
+        <MappingFragment StoreEntitySet="Profiles">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="PropertyNames" ColumnName="PropertyNames" />
+          <ScalarProperty Name="PropertyValueStrings" ColumnName="PropertyValueStrings" />
+          <ScalarProperty Name="PropertyValueBinary" ColumnName="PropertyValueBinary" />
+          <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspRoles">
+      <EntityTypeMapping TypeName="TBOffice.Model.AspRole">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Menus">
+      <EntityTypeMapping TypeName="TBOffice.Model.Menu">
+        <MappingFragment StoreEntitySet="secMenu">
+          <ScalarProperty Name="MenuID" ColumnName="MenuID" />
+          <ScalarProperty Name="ParentMenuID" ColumnName="ParentMenuID" />
+          <ScalarProperty Name="ShortDesc" ColumnName="ShortDesc" />
+          <ScalarProperty Name="NavigateUrl" ColumnName="NavigateUrl" />
+          <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+          <ScalarProperty Name="Target" ColumnName="Target" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="TBOffice.Model.Role">
+        <MappingFragment StoreEntitySet="secRoles">
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBUsers">
+      <EntityTypeMapping TypeName="TBOffice.Model.TBUser">
+        <MappingFragment StoreEntitySet="secUsers">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="AspUserID" ColumnName="AspUserID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="IsEmployee" ColumnName="IsEmployee" />
+          <ScalarProperty Name="IsFullTime" ColumnName="IsFullTime" />
+          <ScalarProperty Name="IsExempt" ColumnName="IsExempt" />
+          <ScalarProperty Name="EETypeID" ColumnName="EETypeID" />
+          <ScalarProperty Name="EECategoryID" ColumnName="EECategoryID" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="TermDate" ColumnName="TermDate" />
+          <ScalarProperty Name="MinHours" ColumnName="MinHours" />
+          <ScalarProperty Name="MaxHours" ColumnName="MaxHours" />
+          <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Congregations">
+      <EntityTypeMapping TypeName="TBOffice.Model.Congregation">
+        <MappingFragment StoreEntitySet="tblCongregations">
+          <ScalarProperty Name="CongregationID" ColumnName="CongregationID" />
+          <ScalarProperty Name="CongregationDesc" ColumnName="CongregationDesc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DateLists">
+      <EntityTypeMapping TypeName="TBOffice.Model.DateList">
+        <MappingFragment StoreEntitySet="tblDates">
+          <ScalarProperty Name="DateID" ColumnName="DateID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EECategories">
+      <EntityTypeMapping TypeName="TBOffice.Model.EECategory">
+        <MappingFragment StoreEntitySet="tblEECategory">
+          <ScalarProperty Name="EECategoryID" ColumnName="EECategoryID" />
+          <ScalarProperty Name="ShortDesc" ColumnName="ShortDesc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EECompensations">
+      <EntityTypeMapping TypeName="TBOffice.Model.EECompensation">
+        <MappingFragment StoreEntitySet="tblEECompensation">
+          <ScalarProperty Name="CompID" ColumnName="CompID" />
+          <ScalarProperty Name="CompUserID" ColumnName="CompUserID" />
+          <ScalarProperty Name="FiscalYear" ColumnName="FiscalYear" />
+          <ScalarProperty Name="IsExempt" ColumnName="IsExempt" />
+          <ScalarProperty Name="Salary" ColumnName="Salary" />
+          <ScalarProperty Name="Housing" ColumnName="Housing" />
+          <ScalarProperty Name="HourlyRate" ColumnName="HourlyRate" />
+          <ScalarProperty Name="VacationAllotment" ColumnName="VacationAllotment" />
+          <ScalarProperty Name="IllnessAllotment" ColumnName="IllnessAllotment" />
+          <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EETypes">
+      <EntityTypeMapping TypeName="TBOffice.Model.EEType">
+        <MappingFragment StoreEntitySet="tblEEType">
+          <ScalarProperty Name="EETypeID" ColumnName="EETypeID" />
+          <ScalarProperty Name="ShortDesc" ColumnName="ShortDesc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Offerings">
+      <EntityTypeMapping TypeName="TBOffice.Model.Offering">
+        <MappingFragment StoreEntitySet="tblOfferings">
+          <ScalarProperty Name="OfferingID" ColumnName="OfferingID" />
+          <ScalarProperty Name="SundayID" ColumnName="SundayID" />
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+          <ScalarProperty Name="GeneralAmt" ColumnName="GeneralAmt" />
+          <ScalarProperty Name="BenevolentAmt" ColumnName="BenevolentAmt" />
+          <ScalarProperty Name="MissionsAmt" ColumnName="MissionsAmt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AttendanceCounts">
+      <EntityTypeMapping TypeName="TBOffice.Model.AttendanceCount">
+        <MappingFragment StoreEntitySet="tblServiceAttendance">
+          <ScalarProperty Name="ServiceAttendanceID" ColumnName="ServiceAttendanceID" />
+          <ScalarProperty Name="SundayID" ColumnName="SundayID" />
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+          <ScalarProperty Name="HeadCount" ColumnName="HeadCount" />
+          <ScalarProperty Name="CardCount" ColumnName="CardCount" />
+          <ScalarProperty Name="CardPct" ColumnName="CardPct" />
+          <ScalarProperty Name="AdultSSCount" ColumnName="AdultSSCount" />
+          <ScalarProperty Name="ChildSSCount" ColumnName="ChildSSCount" />
+          <ScalarProperty Name="YouthSSCount" ColumnName="YouthSSCount" />
+          <ScalarProperty Name="ParkingCount" ColumnName="ParkingCount" />
+          <ScalarProperty Name="SSMA_TimeStamp" ColumnName="SSMA_TimeStamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Services">
+      <EntityTypeMapping TypeName="TBOffice.Model.Service">
+        <MappingFragment StoreEntitySet="tblServices">
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+          <ScalarProperty Name="CongregationID" ColumnName="CongregationID" />
+          <ScalarProperty Name="ServiceCode" ColumnName="ServiceCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sundays">
+      <EntityTypeMapping TypeName="TBOffice.Model.Sunday">
+        <MappingFragment StoreEntitySet="tblSundays">
+          <ScalarProperty Name="SundayID" ColumnName="SundayID" />
+          <ScalarProperty Name="SunDate" ColumnName="SunDate" />
+          <ScalarProperty Name="SunMonth" ColumnName="SunMonth" />
+          <ScalarProperty Name="SunYear" ColumnName="SunYear" />
+          <ScalarProperty Name="FiscalYear" ColumnName="FiscalYear" />
+          <ScalarProperty Name="WeekOfYear" ColumnName="WeekOfYear" />
+          <ScalarProperty Name="WeekOfFiscalYear" ColumnName="WeekOfFiscalYear" />
+          <ScalarProperty Name="WeekOfMonth" ColumnName="WeekOfMonth" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TORequests">
+      <EntityTypeMapping TypeName="TBOffice.Model.TORequest">
+        <MappingFragment StoreEntitySet="tblTORequest">
+          <ScalarProperty Name="TORequestID" ColumnName="TORequestID" />
+          <ScalarProperty Name="TODate" ColumnName="TODate" />
+          <ScalarProperty Name="TOUserID" ColumnName="TOUserID" />
+          <ScalarProperty Name="RequestDT" ColumnName="RequestDT" />
+          <ScalarProperty Name="ApprovalDT" ColumnName="ApprovalDT" />
+          <ScalarProperty Name="ApprovalUserID" ColumnName="ApprovalUserID" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TSEntries">
+      <EntityTypeMapping TypeName="TBOffice.Model.TSEntry">
+        <MappingFragment StoreEntitySet="tblTSEntry">
+          <ScalarProperty Name="TSEntryID" ColumnName="TSEntryID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="TSDate" ColumnName="TSDate" />
+          <ScalarProperty Name="WorkHours" ColumnName="WorkHours" />
+          <ScalarProperty Name="VacationHours" ColumnName="VacationHours" />
+          <ScalarProperty Name="SickHours" ColumnName="SickHours" />
+          <ScalarProperty Name="HolidayHours" ColumnName="HolidayHours" />
+          <ScalarProperty Name="TotalHours" ColumnName="TotalHours" />
+          <ScalarProperty Name="IsAdjustment" ColumnName="IsAdjustment" />
+          <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TSWeeks">
+      <EntityTypeMapping TypeName="TBOffice.Model.TSWeek">
+        <MappingFragment StoreEntitySet="tblTSWeek">
+          <ScalarProperty Name="TSWeekID" ColumnName="TSWeekID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="WeekID" ColumnName="WeekID" />
+          <ScalarProperty Name="WorkHours" ColumnName="WorkHours" />
+          <ScalarProperty Name="VacationHours" ColumnName="VacationHours" />
+          <ScalarProperty Name="SickHours" ColumnName="SickHours" />
+          <ScalarProperty Name="HolidayHours" ColumnName="HolidayHours" />
+          <ScalarProperty Name="TotalHours" ColumnName="TotalHours" />
+          <ScalarProperty Name="BalanceHours" ColumnName="BalanceHours" />
+          <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Weeks">
+      <EntityTypeMapping TypeName="TBOffice.Model.Week">
+        <MappingFragment StoreEntitySet="tblWeeks">
+          <ScalarProperty Name="WeekID" ColumnName="WeekID" />
+          <ScalarProperty Name="WeekNum" ColumnName="WeekNum" />
+          <ScalarProperty Name="YearNum" ColumnName="YearNum" />
+          <ScalarProperty Name="BegDate" ColumnName="BegDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspUsers">
+      <EntityTypeMapping TypeName="TBOffice.Model.AspUser">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="IsAnonymous" ColumnName="IsAnonymous" />
+          <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="secMenuRoles" TypeName="TBOffice.Model.secMenuRoles" StoreEntitySet="secMenuRoles">
+      <EndProperty Name="secMenu">
+        <ScalarProperty Name="MenuID" ColumnName="MenuID" />
+      </EndProperty>
+      <EndProperty Name="secRoles">
+        <ScalarProperty Name="RoleID" ColumnName="RoldID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <FunctionImportMapping FunctionImportName="add_tblDates" FunctionName="TBOffice.Model.Store.add_tblDates" />
+    <FunctionImportMapping FunctionImportName="approve_tblTORequest" FunctionName="TBOffice.Model.Store.approve_tblTORequest" />
+    <FunctionImportMapping FunctionImportName="chk_UserTSEntries" FunctionName="TBOffice.Model.Store.chk_UserTSEntries" />
+    <FunctionImportMapping FunctionImportName="del_tblTORequest" FunctionName="TBOffice.Model.Store.del_tblTORequest" />
+    <FunctionImportMapping FunctionImportName="get_EE_Balances" FunctionName="TBOffice.Model.Store.get_EE_Balances">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TBOffice.Model.get_EE_Balances_Result">
+          <ScalarProperty Name="VacBalance" ColumnName="VacBalance" />
+          <ScalarProperty Name="SickBalance" ColumnName="SickBalance" />
+          <ScalarProperty Name="WorkBalance" ColumnName="WorkBalance" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="get_TimesheetEntries" FunctionName="TBOffice.Model.Store.get_TimesheetEntries">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TBOffice.Model.get_TimesheetEntries_Result">
+          <ScalarProperty Name="TSEntryID" ColumnName="TSEntryID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="TSDate" ColumnName="TSDate" />
+          <ScalarProperty Name="WorkHours" ColumnName="WorkHours" />
+          <ScalarProperty Name="VacationHours" ColumnName="VacationHours" />
+          <ScalarProperty Name="SickHours" ColumnName="SickHours" />
+          <ScalarProperty Name="HolidayHours" ColumnName="HolidayHours" />
+          <ScalarProperty Name="TotalHours" ColumnName="TotalHours" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ins_tblTORequest" FunctionName="TBOffice.Model.Store.ins_tblTORequest" />
+    <FunctionImportMapping FunctionImportName="ins_tblTSEntry" FunctionName="TBOffice.Model.Store.ins_tblTSEntry" />
+    <FunctionImportMapping FunctionImportName="ins_tblTSWeek" FunctionName="TBOffice.Model.Store.ins_tblTSWeek" />
+    <FunctionImportMapping FunctionImportName="usp_tblTSEntryUpdate" FunctionName="TBOffice.Model.Store.usp_tblTSEntryUpdate">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TBOffice.Model.usp_tblTSEntryUpdate_Result">
+          <ScalarProperty Name="TSEntryID" ColumnName="TSEntryID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="TSDate" ColumnName="TSDate" />
+          <ScalarProperty Name="WorkHours" ColumnName="WorkHours" />
+          <ScalarProperty Name="VacationHours" ColumnName="VacationHours" />
+          <ScalarProperty Name="SickHours" ColumnName="SickHours" />
+          <ScalarProperty Name="HolidayHours" ColumnName="HolidayHours" />
+          <ScalarProperty Name="TotalHours" ColumnName="TotalHours" />
+          <ScalarProperty Name="IsAdjustment" ColumnName="IsAdjustment" />
+          <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <AssociationSetMapping Name="secUserRoles" TypeName="TBOffice.Model.secUserRoles" StoreEntitySet="secUserRoles">
+      <EndProperty Name="TBUser">
+        <ScalarProperty Name="UserID" ColumnName="UserID" />
+      </EndProperty>
+      <EndProperty Name="Role">
+        <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <FunctionImportMapping FunctionImportName="get_MenusByUser" FunctionName="TBOffice.Model.Store.get_MenusByUser">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TBOffice.Model.fxMenu">
+          <ScalarProperty Name="MenuID" ColumnName="MenuID" />
+          <ScalarProperty Name="ParentMenuID" ColumnName="ParentMenuID" />
+          <ScalarProperty Name="ShortDesc" ColumnName="ShortDesc" />
+          <ScalarProperty Name="NavigateUrl" ColumnName="NavigateUrl" />
+          <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+          <ScalarProperty Name="Target" ColumnName="Target" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

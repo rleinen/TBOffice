@@ -1,0 +1,684 @@
+c:\users\randy_2\documents\visual studio 2013\Projects\TBOffice\TBOffice\bin\TBOffice.dll.config
+c:\users\randy_2\documents\visual studio 2013\Projects\TBOffice\TBOffice\bin\TBOffice.dll
+c:\users\randy_2\documents\visual studio 2013\Projects\TBOffice\TBOffice\bin\TBOffice.pdb
+c:\users\randy_2\documents\visual studio 2013\Projects\TBOffice\TBOffice\bin\Antlr3.Runtime.dll
+c:\users\randy_2\documents\visual studio 2013\Projects\TBOffice\TBOffice\bin\AspNet.ScriptManager.jQuery.dll
+c:\users\randy_2\documents\visual studio 2013\Projects\TBOffice\TBOffice\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+c:\users\randy_2\documents\visual studio 2013\Projects\TBOffice\TBOffice\bin\DotNetOpenAuth.AspNet.dll
+c:\users\randy_2\documents\visual studio 2013\Projects\TBOffice\TBOffice\bin\DotNetOpenAuth.Core.dll
+c:\users\randy_2\documents\visual studio 2013\Projects\TBOffice\TBOffice\bin\DotNetOpenAuth.OAuth.Consumer.dll
+c:\users\randy_2\documents\visual studio 2013\Projects\TBOffice\TBOffice\bin\DotNetOpenAuth.OAuth.dll
+c:\users\randy_2\documents\visual studio 2013\Projects\TBOffice\TBOffice\bin\DotNetOpenAuth.OpenId.dll
+c:\users\randy_2\documents\visual studio 2013\Projects\TBOffice\TBOffice\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+c:\users\randy_2\documents\visual studio 2013\Projects\TBOffice\TBOffice\bin\EntityFramework.dll
+c:\users\randy_2\documents\visual studio 2013\Projects\TBOffice\TBOffice\bin\Microsoft.AspNet.FriendlyUrls.dll
+c:\users\randy_2\documents\visual studio 2013\Projects\TBOffice\TBOffice\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+c:\users\randy_2\documents\visual studio 2013\Projects\TBOffice\TBOffice\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+c:\users\randy_2\documents\visual studio 2013\Projects\TBOffice\TBOffice\bin\Microsoft.ScriptManager.WebForms.dll
+c:\users\randy_2\documents\visual studio 2013\Projects\TBOffice\TBOffice\bin\Microsoft.Web.Infrastructure.dll
+c:\users\randy_2\documents\visual studio 2013\Projects\TBOffice\TBOffice\bin\System.Web.Optimization.dll
+c:\users\randy_2\documents\visual studio 2013\Projects\TBOffice\TBOffice\bin\System.Web.Providers.dll
+c:\users\randy_2\documents\visual studio 2013\Projects\TBOffice\TBOffice\bin\WebGrease.dll
+c:\users\randy_2\documents\visual studio 2013\Projects\TBOffice\TBOffice\bin\EntityFramework.xml
+c:\users\randy_2\documents\visual studio 2013\Projects\TBOffice\TBOffice\bin\DotNetOpenAuth.Core.xml
+c:\users\randy_2\documents\visual studio 2013\Projects\TBOffice\TBOffice\bin\DotNetOpenAuth.OAuth.xml
+c:\users\randy_2\documents\visual studio 2013\Projects\TBOffice\TBOffice\bin\DotNetOpenAuth.OAuth.Consumer.xml
+c:\users\randy_2\documents\visual studio 2013\Projects\TBOffice\TBOffice\bin\DotNetOpenAuth.OpenId.xml
+c:\users\randy_2\documents\visual studio 2013\Projects\TBOffice\TBOffice\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+c:\users\randy_2\documents\visual studio 2013\Projects\TBOffice\TBOffice\bin\DotNetOpenAuth.AspNet.xml
+c:\users\randy_2\documents\visual studio 2013\Projects\TBOffice\TBOffice\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+c:\users\randy_2\documents\visual studio 2013\Projects\TBOffice\TBOffice\bin\Microsoft.AspNet.FriendlyUrls.xml
+c:\users\randy_2\documents\visual studio 2013\Projects\TBOffice\TBOffice\obj\Debug\TBOffice.csprojResolveAssemblyReference.cache
+c:\users\randy_2\documents\visual studio 2013\Projects\TBOffice\TBOffice\obj\Debug\TBOffice.dll
+c:\users\randy_2\documents\visual studio 2013\Projects\TBOffice\TBOffice\obj\Debug\TBOffice.pdb
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\APNSoftControls.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\obout_Calendar2_Net.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\obout_ComboBox.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\obout_EasyMenu_Pro.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\obout_Grid_NET.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\obout_Interface.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\obout_ListBox.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\obout_SuperForm.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\obout_Calendar2_Net.xml
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\obout_ComboBox.xml
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\obout_EasyMenu_Pro.xml
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\obout_Grid_NET.xml
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\obout_Interface.xml
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\obout_ListBox.xml
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\obout_SuperForm.xml
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\AjaxControlToolkit.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\AjaxMin.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\HtmlAgilityPack.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\Microsoft.Data.Edm.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\Microsoft.Data.OData.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\Microsoft.WindowsAzure.Storage.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\System.Spatial.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\HtmlAgilityPack.pdb
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\HtmlAgilityPack.xml
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\Microsoft.Data.Edm.xml
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\Microsoft.Data.OData.xml
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\Microsoft.WindowsAzure.Storage.xml
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\System.Spatial.xml
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\ar\AjaxControlToolkit.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\cs\AjaxControlToolkit.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\de\AjaxControlToolkit.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\es\AjaxControlToolkit.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\fr\AjaxControlToolkit.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\he\AjaxControlToolkit.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\hi\AjaxControlToolkit.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\it\AjaxControlToolkit.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\ja\AjaxControlToolkit.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\ko\AjaxControlToolkit.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\nl\AjaxControlToolkit.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\pl\AjaxControlToolkit.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\pt\AjaxControlToolkit.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\ru\AjaxControlToolkit.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\tr-TR\AjaxControlToolkit.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\zh-CHS\AjaxControlToolkit.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\zh-CHT\AjaxControlToolkit.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\de\System.Spatial.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\es\System.Spatial.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\fr\System.Spatial.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\it\System.Spatial.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\ja\System.Spatial.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\ko\System.Spatial.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\ru\System.Spatial.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\Randy_2\Documents\Visual Studio 2013\Projects\TBOffice\TBOffice\bin\zh-Hant\System.Spatial.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\TBOffice.dll.config
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\TBOffice.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\TBOffice.pdb
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\AjaxControlToolkit.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\AjaxMin.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Antlr3.Runtime.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\AspNet.ScriptManager.jQuery.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.AspNet.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.Core.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.OAuth.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.OpenId.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\EntityFramework.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\HtmlAgilityPack.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.Data.Edm.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.Data.OData.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.ScriptManager.WebForms.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.Web.Infrastructure.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.WindowsAzure.Configuration.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.WindowsAzure.Storage.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\System.Spatial.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\System.Web.Optimization.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\System.Web.Providers.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\WebGrease.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\HtmlAgilityPack.pdb
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\HtmlAgilityPack.xml
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.Data.Edm.xml
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.Data.OData.xml
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.WindowsAzure.Storage.xml
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\obout_Calendar2_Net.xml
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\obout_ComboBox.xml
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\obout_EasyMenu_Pro.xml
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\obout_Grid_NET.xml
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\obout_Interface.xml
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\obout_ListBox.xml
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\obout_SuperForm.xml
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\System.Spatial.xml
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\EntityFramework.xml
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.Core.xml
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.OAuth.xml
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.OpenId.xml
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.AspNet.xml
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ar\AjaxControlToolkit.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\cs\AjaxControlToolkit.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\de\AjaxControlToolkit.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\es\AjaxControlToolkit.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\fr\AjaxControlToolkit.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\he\AjaxControlToolkit.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\hi\AjaxControlToolkit.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\it\AjaxControlToolkit.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ja\AjaxControlToolkit.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ko\AjaxControlToolkit.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\nl\AjaxControlToolkit.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\pl\AjaxControlToolkit.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\pt\AjaxControlToolkit.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ru\AjaxControlToolkit.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\tr-TR\AjaxControlToolkit.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\zh-CHS\AjaxControlToolkit.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\zh-CHT\AjaxControlToolkit.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\de\Microsoft.Data.Edm.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\es\Microsoft.Data.Edm.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\it\Microsoft.Data.Edm.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\de\Microsoft.Data.OData.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\es\Microsoft.Data.OData.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\fr\Microsoft.Data.OData.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\it\Microsoft.Data.OData.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ja\Microsoft.Data.OData.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ko\Microsoft.Data.OData.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ru\Microsoft.Data.OData.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\de\System.Spatial.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\es\System.Spatial.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\fr\System.Spatial.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\it\System.Spatial.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ja\System.Spatial.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ko\System.Spatial.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ru\System.Spatial.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\zh-Hans\System.Spatial.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\bin\zh-Hant\System.Spatial.resources.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\obj\Debug\TBOffice.csprojResolveAssemblyReference.cache
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\obj\Debug\TBOffice.dll
+D:\Dropbox\_VSProjects\TBOffice\TBOffice\obj\Debug\TBOffice.pdb
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\TBOffice.dll.config
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\TBOffice.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\TBOffice.pdb
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\AjaxControlToolkit.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\AjaxMin.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Antlr3.Runtime.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.Core.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\EntityFramework.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\HtmlAgilityPack.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.Data.Edm.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.Data.OData.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.WindowsAzure.Storage.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\System.Spatial.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\System.Web.Optimization.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\System.Web.Providers.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\WebGrease.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\HtmlAgilityPack.pdb
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\HtmlAgilityPack.xml
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.Data.Edm.xml
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.Data.OData.xml
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.WindowsAzure.Storage.xml
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\obout_Calendar2_Net.xml
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\obout_ComboBox.xml
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\obout_EasyMenu_Pro.xml
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\obout_Grid_NET.xml
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\obout_Interface.xml
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\obout_ListBox.xml
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\obout_SuperForm.xml
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\System.Spatial.xml
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\EntityFramework.xml
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.Core.xml
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ar\AjaxControlToolkit.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\cs\AjaxControlToolkit.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\de\AjaxControlToolkit.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\es\AjaxControlToolkit.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\fr\AjaxControlToolkit.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\he\AjaxControlToolkit.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\hi\AjaxControlToolkit.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\it\AjaxControlToolkit.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ja\AjaxControlToolkit.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ko\AjaxControlToolkit.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\nl\AjaxControlToolkit.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\pl\AjaxControlToolkit.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\pt\AjaxControlToolkit.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ru\AjaxControlToolkit.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\tr-TR\AjaxControlToolkit.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\zh-CHS\AjaxControlToolkit.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\zh-CHT\AjaxControlToolkit.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\de\System.Spatial.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\es\System.Spatial.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\fr\System.Spatial.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\it\System.Spatial.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ja\System.Spatial.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ko\System.Spatial.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ru\System.Spatial.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\obj\Debug\TBOffice.csprojResolveAssemblyReference.cache
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\obj\Debug\TBOffice.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\obj\Debug\TBOffice.pdb
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ControlExtensions.dll
+C:\Users\randy.AD\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ControlExtensions.pdb
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\TBOffice.dll.config
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\TBOffice.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\TBOffice.pdb
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\AjaxControlToolkit.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\AjaxMin.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Antlr3.Runtime.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.Core.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\EntityFramework.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\HtmlAgilityPack.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.Data.Edm.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.Data.OData.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.WindowsAzure.Storage.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\System.Spatial.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\System.Web.Optimization.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\System.Web.Providers.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\WebGrease.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ControlExtensions.pdb
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\HtmlAgilityPack.pdb
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\HtmlAgilityPack.xml
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.Data.Edm.xml
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.Data.OData.xml
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.WindowsAzure.Storage.xml
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\obout_Calendar2_Net.xml
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\obout_ComboBox.xml
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\obout_EasyMenu_Pro.xml
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\obout_Grid_NET.xml
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\obout_Interface.xml
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\obout_ListBox.xml
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\obout_SuperForm.xml
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\System.Spatial.xml
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\EntityFramework.xml
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.Core.xml
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ar\AjaxControlToolkit.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\cs\AjaxControlToolkit.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\de\AjaxControlToolkit.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\es\AjaxControlToolkit.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\fr\AjaxControlToolkit.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\he\AjaxControlToolkit.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\hi\AjaxControlToolkit.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\it\AjaxControlToolkit.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ja\AjaxControlToolkit.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ko\AjaxControlToolkit.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\nl\AjaxControlToolkit.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\pl\AjaxControlToolkit.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\pt\AjaxControlToolkit.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ru\AjaxControlToolkit.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\tr-TR\AjaxControlToolkit.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\zh-CHS\AjaxControlToolkit.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\zh-CHT\AjaxControlToolkit.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\de\System.Spatial.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\es\System.Spatial.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\fr\System.Spatial.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\it\System.Spatial.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ja\System.Spatial.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ko\System.Spatial.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ru\System.Spatial.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\obj\Debug\TBOffice.csprojResolveAssemblyReference.cache
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\obj\Debug\TBOffice.dll
+C:\Users\Randy\Dropbox\_VSProjects\TBOffice\TBOffice\obj\Debug\TBOffice.pdb
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\TBOffice.dll.config
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\TBOffice.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\TBOffice.pdb
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\AjaxControlToolkit.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\AjaxMin.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Antlr3.Runtime.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\AspNet.ScriptManager.jQuery.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.AspNet.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.Core.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.OAuth.Consumer.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.OAuth.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.OpenId.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\EntityFramework.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\HtmlAgilityPack.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.AspNet.FriendlyUrls.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.Data.Edm.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.Data.OData.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.ScriptManager.WebForms.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.Web.Infrastructure.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.WindowsAzure.Configuration.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.WindowsAzure.Storage.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\System.Spatial.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\System.Web.Optimization.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\System.Web.Providers.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\WebGrease.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ControlExtensions.pdb
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\HtmlAgilityPack.pdb
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\HtmlAgilityPack.xml
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.Data.Edm.xml
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.Data.OData.xml
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.WindowsAzure.Storage.xml
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\obout_Calendar2_Net.xml
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\obout_ComboBox.xml
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\obout_EasyMenu_Pro.xml
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\obout_Grid_NET.xml
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\obout_Interface.xml
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\obout_ListBox.xml
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\obout_SuperForm.xml
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\System.Spatial.xml
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\EntityFramework.xml
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.Core.xml
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.OAuth.xml
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.OAuth.Consumer.xml
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.OpenId.xml
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\DotNetOpenAuth.AspNet.xml
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\Microsoft.AspNet.FriendlyUrls.xml
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ar\AjaxControlToolkit.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\cs\AjaxControlToolkit.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\de\AjaxControlToolkit.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\es\AjaxControlToolkit.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\fr\AjaxControlToolkit.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\he\AjaxControlToolkit.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\hi\AjaxControlToolkit.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\it\AjaxControlToolkit.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ja\AjaxControlToolkit.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ko\AjaxControlToolkit.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\nl\AjaxControlToolkit.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\pl\AjaxControlToolkit.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\pt\AjaxControlToolkit.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ru\AjaxControlToolkit.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\tr-TR\AjaxControlToolkit.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\zh-CHS\AjaxControlToolkit.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\zh-CHT\AjaxControlToolkit.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\de\Microsoft.Data.Edm.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\es\Microsoft.Data.Edm.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\fr\Microsoft.Data.Edm.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\it\Microsoft.Data.Edm.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ja\Microsoft.Data.Edm.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ko\Microsoft.Data.Edm.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ru\Microsoft.Data.Edm.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\de\Microsoft.Data.OData.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\es\Microsoft.Data.OData.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\fr\Microsoft.Data.OData.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\it\Microsoft.Data.OData.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ja\Microsoft.Data.OData.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ko\Microsoft.Data.OData.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ru\Microsoft.Data.OData.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\de\System.Spatial.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\es\System.Spatial.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\fr\System.Spatial.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\it\System.Spatial.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ja\System.Spatial.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ko\System.Spatial.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\ru\System.Spatial.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\zh-Hans\System.Spatial.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\bin\zh-Hant\System.Spatial.resources.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\obj\Debug\TBOffice.csprojResolveAssemblyReference.cache
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\obj\Debug\TBOffice.dll
+\\psf\Dropbox\_VSProjects\TBOffice\TBOffice\obj\Debug\TBOffice.pdb
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\TBOffice.dll.config
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\TBOffice.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\TBOffice.pdb
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\AjaxControlToolkit.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\AjaxMin.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\Antlr3.Runtime.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\AspNet.ScriptManager.jQuery.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DotNetOpenAuth.AspNet.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DotNetOpenAuth.Core.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DotNetOpenAuth.OAuth.Consumer.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DotNetOpenAuth.OAuth.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DotNetOpenAuth.OpenId.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\EntityFramework.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\HtmlAgilityPack.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\Microsoft.AspNet.FriendlyUrls.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\Microsoft.Data.Edm.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\Microsoft.Data.OData.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\Microsoft.ScriptManager.WebForms.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\Microsoft.Web.Infrastructure.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\Microsoft.WindowsAzure.Configuration.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\Microsoft.WindowsAzure.Storage.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\System.Spatial.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\System.Web.Optimization.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\System.Web.Providers.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\WebGrease.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\HtmlAgilityPack.pdb
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\HtmlAgilityPack.xml
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\Microsoft.Data.Edm.xml
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\Microsoft.Data.OData.xml
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\Microsoft.WindowsAzure.Storage.xml
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\System.Spatial.xml
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\EntityFramework.xml
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DotNetOpenAuth.Core.xml
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DotNetOpenAuth.OAuth.xml
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DotNetOpenAuth.OAuth.Consumer.xml
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DotNetOpenAuth.OpenId.xml
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DotNetOpenAuth.AspNet.xml
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\Microsoft.AspNet.FriendlyUrls.xml
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\ar\AjaxControlToolkit.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\cs\AjaxControlToolkit.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\de\AjaxControlToolkit.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\es\AjaxControlToolkit.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\fr\AjaxControlToolkit.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\he\AjaxControlToolkit.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\hi\AjaxControlToolkit.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\it\AjaxControlToolkit.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\ja\AjaxControlToolkit.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\ko\AjaxControlToolkit.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\nl\AjaxControlToolkit.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\pl\AjaxControlToolkit.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\pt\AjaxControlToolkit.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\ru\AjaxControlToolkit.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\tr-TR\AjaxControlToolkit.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\zh-CHS\AjaxControlToolkit.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\zh-CHT\AjaxControlToolkit.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\de\Microsoft.Data.Edm.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\es\Microsoft.Data.Edm.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\fr\Microsoft.Data.Edm.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\it\Microsoft.Data.Edm.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\ja\Microsoft.Data.Edm.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\ko\Microsoft.Data.Edm.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\ru\Microsoft.Data.Edm.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\de\Microsoft.Data.OData.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\es\Microsoft.Data.OData.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\fr\Microsoft.Data.OData.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\it\Microsoft.Data.OData.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\ja\Microsoft.Data.OData.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\ko\Microsoft.Data.OData.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\ru\Microsoft.Data.OData.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\de\System.Spatial.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\es\System.Spatial.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\fr\System.Spatial.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\it\System.Spatial.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\ja\System.Spatial.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\ko\System.Spatial.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\ru\System.Spatial.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\zh-Hans\System.Spatial.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\zh-Hant\System.Spatial.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\obj\Debug\TBOffice.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\obj\Debug\TBOffice.pdb
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DevExpress.Charts.v15.2.Core.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DevExpress.Data.v15.2.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DevExpress.DataAccess.v15.2.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DevExpress.Office.v15.2.Core.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DevExpress.PivotGrid.v15.2.Core.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DevExpress.Printing.v15.2.Core.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DevExpress.RichEdit.v15.2.Core.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DevExpress.Sparkline.v15.2.Core.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DevExpress.Xpo.v15.2.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DevExpress.XtraCharts.v15.2.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DevExpress.XtraGauges.v15.2.Core.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DevExpress.XtraReports.v15.2.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DevExpress.CodeParser.v15.2.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DevExpress.Pdf.v15.2.Core.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DevExpress.Pdf.v15.2.Drawing.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DevExpress.Data.v15.2.xml
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DevExpress.DataAccess.v15.2.xml
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DevExpress.Office.v15.2.Core.xml
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DevExpress.PivotGrid.v15.2.Core.xml
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DevExpress.Printing.v15.2.Core.xml
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DevExpress.RichEdit.v15.2.Core.xml
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DevExpress.Sparkline.v15.2.Core.xml
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DevExpress.XtraCharts.v15.2.xml
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DevExpress.XtraGauges.v15.2.Core.xml
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DevExpress.XtraReports.v15.2.xml
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DevExpress.Pdf.v15.2.Core.xml
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DevExpress.Pdf.v15.2.Drawing.xml
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\de\DevExpress.Data.v15.2.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\es\DevExpress.Data.v15.2.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\ja\DevExpress.Data.v15.2.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\ru\DevExpress.Data.v15.2.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\de\DevExpress.DataAccess.v15.2.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\es\DevExpress.DataAccess.v15.2.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\ja\DevExpress.DataAccess.v15.2.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\ru\DevExpress.DataAccess.v15.2.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\de\DevExpress.Office.v15.2.Core.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\es\DevExpress.Office.v15.2.Core.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\ja\DevExpress.Office.v15.2.Core.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\ru\DevExpress.Office.v15.2.Core.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\de\DevExpress.PivotGrid.v15.2.Core.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\es\DevExpress.PivotGrid.v15.2.Core.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\ja\DevExpress.PivotGrid.v15.2.Core.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\ru\DevExpress.PivotGrid.v15.2.Core.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\de\DevExpress.Printing.v15.2.Core.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\es\DevExpress.Printing.v15.2.Core.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\ja\DevExpress.Printing.v15.2.Core.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\ru\DevExpress.Printing.v15.2.Core.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\de\DevExpress.RichEdit.v15.2.Core.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\es\DevExpress.RichEdit.v15.2.Core.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\ja\DevExpress.RichEdit.v15.2.Core.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\ru\DevExpress.RichEdit.v15.2.Core.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\de\DevExpress.Sparkline.v15.2.Core.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\es\DevExpress.Sparkline.v15.2.Core.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\ja\DevExpress.Sparkline.v15.2.Core.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\ru\DevExpress.Sparkline.v15.2.Core.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\de\DevExpress.Xpo.v15.2.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\es\DevExpress.Xpo.v15.2.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\ja\DevExpress.Xpo.v15.2.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\ru\DevExpress.Xpo.v15.2.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\de\DevExpress.XtraCharts.v15.2.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\es\DevExpress.XtraCharts.v15.2.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\ja\DevExpress.XtraCharts.v15.2.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\ru\DevExpress.XtraCharts.v15.2.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\de\DevExpress.XtraGauges.v15.2.Core.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\es\DevExpress.XtraGauges.v15.2.Core.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\ja\DevExpress.XtraGauges.v15.2.Core.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\ru\DevExpress.XtraGauges.v15.2.Core.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\de\DevExpress.XtraReports.v15.2.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\es\DevExpress.XtraReports.v15.2.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\ja\DevExpress.XtraReports.v15.2.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\ru\DevExpress.XtraReports.v15.2.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\de\DevExpress.Pdf.v15.2.Core.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\es\DevExpress.Pdf.v15.2.Core.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\ja\DevExpress.Pdf.v15.2.Core.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\ru\DevExpress.Pdf.v15.2.Core.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\obj\Debug\PayPeriod.resources
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\obj\Debug\TBOffice.csproj.GenerateResource.Cache
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\obj\Debug\TBOffice.dll.licenses
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DevExpress.Web.ASPxThemes.v15.2.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DevExpress.Web.v15.2.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DevExpress.XtraReports.v15.2.Web.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\DevExpress.XtraReports.v15.2.Web.xml
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\de\DevExpress.Web.v15.2.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\es\DevExpress.Web.v15.2.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\ja\DevExpress.Web.v15.2.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\ru\DevExpress.Web.v15.2.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\de\DevExpress.XtraReports.v15.2.Web.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\es\DevExpress.XtraReports.v15.2.Web.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\ja\DevExpress.XtraReports.v15.2.Web.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\bin\ru\DevExpress.XtraReports.v15.2.Web.resources.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\obj\Debug\TBOffice.Finances.test.resources
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\TBOffice\TBOffice\obj\Debug\TBOffice.csprojResolveAssemblyReference.cache

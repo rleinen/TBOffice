@@ -1,0 +1,723 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TBOffice.Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Applications">
+    <Key>
+      <PropertyRef Name="ApplicationId" />
+    </Key>
+    <Property Name="ApplicationName" Type="nvarchar" MaxLength="235" Nullable="false" />
+    <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="Memberships">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="PasswordFormat" Type="int" Nullable="false" />
+    <Property Name="PasswordSalt" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="256" />
+    <Property Name="PasswordQuestion" Type="nvarchar" MaxLength="256" />
+    <Property Name="PasswordAnswer" Type="nvarchar" MaxLength="128" />
+    <Property Name="IsApproved" Type="bit" Nullable="false" />
+    <Property Name="IsLockedOut" Type="bit" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="LastLoginDate" Type="datetime" Nullable="false" />
+    <Property Name="LastPasswordChangedDate" Type="datetime" Nullable="false" />
+    <Property Name="LastLockoutDate" Type="datetime" Nullable="false" />
+    <Property Name="FailedPasswordAttemptCount" Type="int" Nullable="false" />
+    <Property Name="FailedPasswordAttemptWindowStart" Type="datetime" Nullable="false" />
+    <Property Name="FailedPasswordAnswerAttemptCount" Type="int" Nullable="false" />
+    <Property Name="FailedPasswordAnswerAttemptWindowsStart" Type="datetime" Nullable="false" />
+    <Property Name="Comment" Type="nvarchar" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="Profiles">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="PropertyNames" Type="nvarchar" MaxLength="4000" Nullable="false" />
+    <Property Name="PropertyValueStrings" Type="nvarchar" MaxLength="4000" Nullable="false" />
+    <Property Name="PropertyValueBinary" Type="image" Nullable="false" />
+    <Property Name="LastUpdatedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="RoleId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="RoleName" Type="nvarchar" MaxLength="256" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="secMenu">
+    <Key>
+      <PropertyRef Name="MenuID" />
+    </Key>
+    <Property Name="MenuID" Type="int" Nullable="false" />
+    <Property Name="ParentMenuID" Type="int" />
+    <Property Name="ShortDesc" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="NavigateUrl" Type="varchar" MaxLength="50" />
+    <Property Name="ImageUrl" Type="varchar" MaxLength="50" />
+    <Property Name="Target" Type="varchar" MaxLength="50" />
+    <Property Name="Enabled" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="secMenuRoles">
+    <Key>
+      <PropertyRef Name="MenuID" />
+      <PropertyRef Name="RoldID" />
+    </Key>
+    <Property Name="MenuID" Type="int" Nullable="false" />
+    <Property Name="RoldID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="secRoles">
+    <Key>
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Name="RoleID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RoleName" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="secUserRoles">
+    <Key>
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="RoleID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="secUsers">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AspUserID" Type="uniqueidentifier" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="20" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="20" />
+    <Property Name="DisplayName" Type="nvarchar" MaxLength="41" StoreGeneratedPattern="Computed" />
+    <Property Name="Email" Type="nvarchar" MaxLength="100" />
+    <Property Name="IsEmployee" Type="bit" Nullable="false" />
+    <Property Name="IsFullTime" Type="bit" />
+    <Property Name="IsExempt" Type="bit" />
+    <Property Name="EETypeID" Type="int" />
+    <Property Name="EECategoryID" Type="int" />
+    <Property Name="StartDate" Type="date" />
+    <Property Name="TermDate" Type="date" />
+    <Property Name="MinHours" Type="tinyint" Nullable="false" />
+    <Property Name="MaxHours" Type="tinyint" Nullable="false" />
+    <Property Name="RowVersion" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblCongregations">
+    <Key>
+      <PropertyRef Name="CongregationID" />
+    </Key>
+    <Property Name="CongregationID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CongregationDesc" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="tblDates">
+    <Key>
+      <PropertyRef Name="DateID" />
+    </Key>
+    <Property Name="DateID" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblEECategory">
+    <Key>
+      <PropertyRef Name="EECategoryID" />
+    </Key>
+    <Property Name="EECategoryID" Type="int" Nullable="false" />
+    <Property Name="ShortDesc" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tblEECompensation">
+    <Key>
+      <PropertyRef Name="CompID" />
+    </Key>
+    <Property Name="CompID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CompUserID" Type="int" Nullable="false" />
+    <Property Name="FiscalYear" Type="int" Nullable="false" />
+    <Property Name="IsExempt" Type="bit" Nullable="false" />
+    <Property Name="Salary" Type="money" Nullable="false" />
+    <Property Name="Housing" Type="money" Nullable="false" />
+    <Property Name="HourlyRate" Type="money" Nullable="false" />
+    <Property Name="VacationAllotment" Type="tinyint" Nullable="false" />
+    <Property Name="IllnessAllotment" Type="tinyint" Nullable="false" />
+    <Property Name="RowVersion" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblEEType">
+    <Key>
+      <PropertyRef Name="EETypeID" />
+    </Key>
+    <Property Name="EETypeID" Type="int" Nullable="false" />
+    <Property Name="ShortDesc" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tblOfferings">
+    <Key>
+      <PropertyRef Name="OfferingID" />
+    </Key>
+    <Property Name="OfferingID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SundayID" Type="int" />
+    <Property Name="ServiceID" Type="int" />
+    <Property Name="GeneralAmt" Type="money" />
+    <Property Name="BenevolentAmt" Type="money" />
+    <Property Name="MissionsAmt" Type="money" />
+  </EntityType>
+  <EntityType Name="tblServiceAttendance">
+    <Key>
+      <PropertyRef Name="ServiceAttendanceID" />
+    </Key>
+    <Property Name="ServiceAttendanceID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SundayID" Type="int" />
+    <Property Name="ServiceID" Type="int" />
+    <Property Name="HeadCount" Type="smallint" />
+    <Property Name="CardCount" Type="smallint" />
+    <Property Name="CardPct" Type="float" />
+    <Property Name="AdultSSCount" Type="smallint" />
+    <Property Name="ChildSSCount" Type="smallint" />
+    <Property Name="YouthSSCount" Type="smallint" />
+    <Property Name="ParkingCount" Type="smallint" />
+    <Property Name="SSMA_TimeStamp" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblServices">
+    <Key>
+      <PropertyRef Name="ServiceID" />
+    </Key>
+    <Property Name="ServiceID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CongregationID" Type="int" />
+    <Property Name="ServiceCode" Type="nvarchar" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="tblSundays">
+    <Key>
+      <PropertyRef Name="SundayID" />
+    </Key>
+    <Property Name="SundayID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SunDate" Type="datetime2" Precision="0" />
+    <Property Name="SunMonth" Type="smallint" />
+    <Property Name="SunYear" Type="smallint" />
+    <Property Name="FiscalYear" Type="int" />
+    <Property Name="WeekOfYear" Type="smallint" />
+    <Property Name="WeekOfFiscalYear" Type="smallint" />
+    <Property Name="WeekOfMonth" Type="smallint" />
+  </EntityType>
+  <EntityType Name="tblTORequest">
+    <Key>
+      <PropertyRef Name="TORequestID" />
+    </Key>
+    <Property Name="TORequestID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TODate" Type="date" Nullable="false" />
+    <Property Name="TOUserID" Type="int" Nullable="false" />
+    <Property Name="RequestDT" Type="datetime" Nullable="false" />
+    <Property Name="ApprovalDT" Type="datetime" />
+    <Property Name="ApprovalUserID" Type="int" />
+    <Property Name="Comment" Type="varchar" MaxLength="255" />
+    <Property Name="RowVersion" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblTSEntry">
+    <Key>
+      <PropertyRef Name="TSEntryID" />
+    </Key>
+    <Property Name="TSEntryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="TSDate" Type="date" Nullable="false" />
+    <Property Name="WorkHours" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="VacationHours" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="SickHours" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="HolidayHours" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="TotalHours" Type="decimal" Precision="8" Scale="2" StoreGeneratedPattern="Computed" />
+    <Property Name="IsAdjustment" Type="bit" Nullable="false" />
+    <Property Name="RowVersion" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+    <Property Name="Notes" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="tblTSWeek">
+    <Key>
+      <PropertyRef Name="TSWeekID" />
+    </Key>
+    <Property Name="TSWeekID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="WeekID" Type="int" Nullable="false" />
+    <Property Name="WorkHours" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="VacationHours" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="SickHours" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="HolidayHours" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="TotalHours" Type="decimal" Precision="8" Scale="2" StoreGeneratedPattern="Computed" />
+    <Property Name="BalanceHours" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="RowVersion" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblWeeks">
+    <Key>
+      <PropertyRef Name="WeekID" />
+    </Key>
+    <Property Name="WeekID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="WeekNum" Type="tinyint" Nullable="false" />
+    <Property Name="YearNum" Type="int" Nullable="false" />
+    <Property Name="BegDate" Type="date" Nullable="false" />
+    <Property Name="EndDate" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsAnonymous" Type="bit" Nullable="false" />
+    <Property Name="LastActivityDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_secMenuRoles_secMenu">
+    <End Role="secMenu" Type="Self.secMenu" Multiplicity="1" />
+    <End Role="secMenuRoles" Type="Self.secMenuRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="secMenu">
+        <PropertyRef Name="MenuID" />
+      </Principal>
+      <Dependent Role="secMenuRoles">
+        <PropertyRef Name="MenuID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_secMenuRoles_secRoles">
+    <End Role="secRoles" Type="Self.secRoles" Multiplicity="1" />
+    <End Role="secMenuRoles" Type="Self.secMenuRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="secRoles">
+        <PropertyRef Name="RoleID" />
+      </Principal>
+      <Dependent Role="secMenuRoles">
+        <PropertyRef Name="RoldID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_secUsers_Memberships">
+    <End Role="Memberships" Type="Self.Memberships" Multiplicity="0..1" />
+    <End Role="secUsers" Type="Self.secUsers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Memberships">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="secUsers">
+        <PropertyRef Name="AspUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_secUsers_tblEECategory">
+    <End Role="tblEECategory" Type="Self.tblEECategory" Multiplicity="0..1" />
+    <End Role="secUsers" Type="Self.secUsers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEECategory">
+        <PropertyRef Name="EECategoryID" />
+      </Principal>
+      <Dependent Role="secUsers">
+        <PropertyRef Name="EECategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_secUsers_tblEEType">
+    <End Role="tblEEType" Type="Self.tblEEType" Multiplicity="0..1" />
+    <End Role="secUsers" Type="Self.secUsers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEEType">
+        <PropertyRef Name="EETypeID" />
+      </Principal>
+      <Dependent Role="secUsers">
+        <PropertyRef Name="EETypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_secUsers_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="secUsers" Type="Self.secUsers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="secUsers">
+        <PropertyRef Name="AspUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEECompensation_secUsers">
+    <End Role="secUsers" Type="Self.secUsers" Multiplicity="1" />
+    <End Role="tblEECompensation" Type="Self.tblEECompensation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="secUsers">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="tblEECompensation">
+        <PropertyRef Name="CompUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblOfferings_tblServices">
+    <End Role="tblServices" Type="Self.tblServices" Multiplicity="0..1" />
+    <End Role="tblOfferings" Type="Self.tblOfferings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblServices">
+        <PropertyRef Name="ServiceID" />
+      </Principal>
+      <Dependent Role="tblOfferings">
+        <PropertyRef Name="ServiceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblOfferings_tblSundays">
+    <End Role="tblSundays" Type="Self.tblSundays" Multiplicity="0..1" />
+    <End Role="tblOfferings" Type="Self.tblOfferings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblSundays">
+        <PropertyRef Name="SundayID" />
+      </Principal>
+      <Dependent Role="tblOfferings">
+        <PropertyRef Name="SundayID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblServiceAttendance_tblServices">
+    <End Role="tblServices" Type="Self.tblServices" Multiplicity="0..1" />
+    <End Role="tblServiceAttendance" Type="Self.tblServiceAttendance" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblServices">
+        <PropertyRef Name="ServiceID" />
+      </Principal>
+      <Dependent Role="tblServiceAttendance">
+        <PropertyRef Name="ServiceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblServiceAttendance_tblSundays">
+    <End Role="tblSundays" Type="Self.tblSundays" Multiplicity="0..1" />
+    <End Role="tblServiceAttendance" Type="Self.tblServiceAttendance" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblSundays">
+        <PropertyRef Name="SundayID" />
+      </Principal>
+      <Dependent Role="tblServiceAttendance">
+        <PropertyRef Name="SundayID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTORequest_secUsers">
+    <End Role="secUsers" Type="Self.secUsers" Multiplicity="1" />
+    <End Role="tblTORequest" Type="Self.tblTORequest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="secUsers">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="tblTORequest">
+        <PropertyRef Name="TOUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTORequest_secUsers1">
+    <End Role="secUsers" Type="Self.secUsers" Multiplicity="0..1" />
+    <End Role="tblTORequest" Type="Self.tblTORequest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="secUsers">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="tblTORequest">
+        <PropertyRef Name="ApprovalUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTSEntry_secUsers">
+    <End Role="secUsers" Type="Self.secUsers" Multiplicity="1" />
+    <End Role="tblTSEntry" Type="Self.tblTSEntry" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="secUsers">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="tblTSEntry">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTSWeek_secUsers">
+    <End Role="secUsers" Type="Self.secUsers" Multiplicity="1" />
+    <End Role="tblTSWeek" Type="Self.tblTSWeek" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="secUsers">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="tblTSWeek">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTSWeek_tblWeeks">
+    <End Role="tblWeeks" Type="Self.tblWeeks" Multiplicity="1" />
+    <End Role="tblTSWeek" Type="Self.tblTSWeek" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblWeeks">
+        <PropertyRef Name="WeekID" />
+      </Principal>
+      <Dependent Role="tblTSWeek">
+        <PropertyRef Name="WeekID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MembershipApplication">
+    <End Role="Applications" Type="Self.Applications" Multiplicity="1" />
+    <End Role="Memberships" Type="Self.Memberships" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Applications">
+        <PropertyRef Name="ApplicationId" />
+      </Principal>
+      <Dependent Role="Memberships">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MembershipUser">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Memberships" Type="Self.Memberships" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Memberships">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RoleApplication">
+    <End Role="Applications" Type="Self.Applications" Multiplicity="1" />
+    <End Role="Roles" Type="Self.Roles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Applications">
+        <PropertyRef Name="ApplicationId" />
+      </Principal>
+      <Dependent Role="Roles">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="secUserRoles$secRolessecUserRoles">
+    <End Role="secRoles" Type="Self.secRoles" Multiplicity="1" />
+    <End Role="secUserRoles" Type="Self.secUserRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="secRoles">
+        <PropertyRef Name="RoleID" />
+      </Principal>
+      <Dependent Role="secUserRoles">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="secUserRoles$secUserssecUserRoles">
+    <End Role="secUsers" Type="Self.secUsers" Multiplicity="1" />
+    <End Role="secUserRoles" Type="Self.secUserRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="secUsers">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="secUserRoles">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="tblServices$tblCongregationstblServices">
+    <End Role="tblCongregations" Type="Self.tblCongregations" Multiplicity="0..1" />
+    <End Role="tblServices" Type="Self.tblServices" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCongregations">
+        <PropertyRef Name="CongregationID" />
+      </Principal>
+      <Dependent Role="tblServices">
+        <PropertyRef Name="CongregationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UserApplication">
+    <End Role="Applications" Type="Self.Applications" Multiplicity="1" />
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Applications">
+        <PropertyRef Name="ApplicationId" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UserProfile">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Profiles" Type="Self.Profiles" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Profiles">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="add_tblDates" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="dt" Type="date" Mode="In" />
+  </Function>
+  <Function Name="approve_tblTORequest" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="TORequestID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="chk_UserTSEntries" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="WeekID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="del_tblTORequest" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TORequestID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="get_EE_Balances" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="get_MenusByUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="get_TimesheetEntries" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="WeekId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ins_tblTORequest" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TOUserID" Type="int" Mode="In" />
+    <Parameter Name="TODate" Type="date" Mode="In" />
+  </Function>
+  <Function Name="ins_tblTSEntry" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="StartDate" Type="date" Mode="In" />
+  </Function>
+  <Function Name="ins_tblTSWeek" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="StartDate" Type="date" Mode="In" />
+  </Function>
+  <Function Name="usp_tblTSEntryUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TSEntryID" Type="int" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="TSDate" Type="date" Mode="In" />
+    <Parameter Name="WorkHours" Type="decimal" Mode="In" />
+    <Parameter Name="VacationHours" Type="decimal" Mode="In" />
+    <Parameter Name="SickHours" Type="decimal" Mode="In" />
+    <Parameter Name="HolidayHours" Type="decimal" Mode="In" />
+    <Parameter Name="TotalHours" Type="decimal" Mode="In" />
+    <Parameter Name="IsAdjustment" Type="bit" Mode="In" />
+    <Parameter Name="Notes" Type="varchar" Mode="In" />
+  </Function>
+  <EntityContainer Name="TBOfficeModelStoreContainer">
+    <EntitySet Name="Applications" EntityType="Self.Applications" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Memberships" EntityType="Self.Memberships" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Profiles" EntityType="Self.Profiles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="secMenu" EntityType="Self.secMenu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="secMenuRoles" EntityType="Self.secMenuRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="secRoles" EntityType="Self.secRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="secUserRoles" EntityType="Self.secUserRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="secUsers" EntityType="Self.secUsers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblCongregations" EntityType="Self.tblCongregations" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblDates" EntityType="Self.tblDates" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblEECategory" EntityType="Self.tblEECategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblEECompensation" EntityType="Self.tblEECompensation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblEEType" EntityType="Self.tblEEType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblOfferings" EntityType="Self.tblOfferings" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblServiceAttendance" EntityType="Self.tblServiceAttendance" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblServices" EntityType="Self.tblServices" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblSundays" EntityType="Self.tblSundays" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblTORequest" EntityType="Self.tblTORequest" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblTSEntry" EntityType="Self.tblTSEntry" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblTSWeek" EntityType="Self.tblTSWeek" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblWeeks" EntityType="Self.tblWeeks" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_secMenuRoles_secMenu" Association="Self.FK_secMenuRoles_secMenu">
+      <End Role="secMenu" EntitySet="secMenu" />
+      <End Role="secMenuRoles" EntitySet="secMenuRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_secMenuRoles_secRoles" Association="Self.FK_secMenuRoles_secRoles">
+      <End Role="secRoles" EntitySet="secRoles" />
+      <End Role="secMenuRoles" EntitySet="secMenuRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_secUsers_Memberships" Association="Self.FK_secUsers_Memberships">
+      <End Role="Memberships" EntitySet="Memberships" />
+      <End Role="secUsers" EntitySet="secUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_secUsers_tblEECategory" Association="Self.FK_secUsers_tblEECategory">
+      <End Role="tblEECategory" EntitySet="tblEECategory" />
+      <End Role="secUsers" EntitySet="secUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_secUsers_tblEEType" Association="Self.FK_secUsers_tblEEType">
+      <End Role="tblEEType" EntitySet="tblEEType" />
+      <End Role="secUsers" EntitySet="secUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_secUsers_Users" Association="Self.FK_secUsers_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="secUsers" EntitySet="secUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEECompensation_secUsers" Association="Self.FK_tblEECompensation_secUsers">
+      <End Role="secUsers" EntitySet="secUsers" />
+      <End Role="tblEECompensation" EntitySet="tblEECompensation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblOfferings_tblServices" Association="Self.FK_tblOfferings_tblServices">
+      <End Role="tblServices" EntitySet="tblServices" />
+      <End Role="tblOfferings" EntitySet="tblOfferings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblOfferings_tblSundays" Association="Self.FK_tblOfferings_tblSundays">
+      <End Role="tblSundays" EntitySet="tblSundays" />
+      <End Role="tblOfferings" EntitySet="tblOfferings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblServiceAttendance_tblServices" Association="Self.FK_tblServiceAttendance_tblServices">
+      <End Role="tblServices" EntitySet="tblServices" />
+      <End Role="tblServiceAttendance" EntitySet="tblServiceAttendance" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblServiceAttendance_tblSundays" Association="Self.FK_tblServiceAttendance_tblSundays">
+      <End Role="tblSundays" EntitySet="tblSundays" />
+      <End Role="tblServiceAttendance" EntitySet="tblServiceAttendance" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTORequest_secUsers" Association="Self.FK_tblTORequest_secUsers">
+      <End Role="secUsers" EntitySet="secUsers" />
+      <End Role="tblTORequest" EntitySet="tblTORequest" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTORequest_secUsers1" Association="Self.FK_tblTORequest_secUsers1">
+      <End Role="secUsers" EntitySet="secUsers" />
+      <End Role="tblTORequest" EntitySet="tblTORequest" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTSEntry_secUsers" Association="Self.FK_tblTSEntry_secUsers">
+      <End Role="secUsers" EntitySet="secUsers" />
+      <End Role="tblTSEntry" EntitySet="tblTSEntry" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTSWeek_secUsers" Association="Self.FK_tblTSWeek_secUsers">
+      <End Role="secUsers" EntitySet="secUsers" />
+      <End Role="tblTSWeek" EntitySet="tblTSWeek" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTSWeek_tblWeeks" Association="Self.FK_tblTSWeek_tblWeeks">
+      <End Role="tblWeeks" EntitySet="tblWeeks" />
+      <End Role="tblTSWeek" EntitySet="tblTSWeek" />
+    </AssociationSet>
+    <AssociationSet Name="MembershipApplication" Association="Self.MembershipApplication">
+      <End Role="Applications" EntitySet="Applications" />
+      <End Role="Memberships" EntitySet="Memberships" />
+    </AssociationSet>
+    <AssociationSet Name="MembershipUser" Association="Self.MembershipUser">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Memberships" EntitySet="Memberships" />
+    </AssociationSet>
+    <AssociationSet Name="RoleApplication" Association="Self.RoleApplication">
+      <End Role="Applications" EntitySet="Applications" />
+      <End Role="Roles" EntitySet="Roles" />
+    </AssociationSet>
+    <AssociationSet Name="secUserRoles$secRolessecUserRoles" Association="Self.secUserRoles$secRolessecUserRoles">
+      <End Role="secRoles" EntitySet="secRoles" />
+      <End Role="secUserRoles" EntitySet="secUserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="secUserRoles$secUserssecUserRoles" Association="Self.secUserRoles$secUserssecUserRoles">
+      <End Role="secUsers" EntitySet="secUsers" />
+      <End Role="secUserRoles" EntitySet="secUserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="tblServices$tblCongregationstblServices" Association="Self.tblServices$tblCongregationstblServices">
+      <End Role="tblCongregations" EntitySet="tblCongregations" />
+      <End Role="tblServices" EntitySet="tblServices" />
+    </AssociationSet>
+    <AssociationSet Name="UserApplication" Association="Self.UserApplication">
+      <End Role="Applications" EntitySet="Applications" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="UserProfile" Association="Self.UserProfile">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Profiles" EntitySet="Profiles" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

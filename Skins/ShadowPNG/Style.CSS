@@ -1,0 +1,131 @@
+/*
+ CSS Style for APNSoft Menu.
+ Version: ShadowPNG 1.0
+ Created: 01/24/2012
+ Updated: 01/24/2012
+ Copyright (C) APNSoft. All rights reserved.
+ http://www.apnsoft.com
+
+ Free for commercial and non-commercial use.
+ You can distribute and modify it freely.
+*/
+
+
+/*=====================Global=======================*/
+
+/*Icon: TD, Title: TD, Arrow: TD*/
+.IconTD, .TitleTD, .ArrowTD
+{
+	font-size:11px;
+	font-family:Arial,Verdana;
+	white-space:nowrap;
+}
+
+
+/*=====================Main Menu=======================*/
+
+/*Main Menu: DIV*/
+.MainMenuDIV
+{
+	padding:2px;
+	background-color:#F1F0EE;
+	border:solid 1px #404040;
+	cursor:default;
+}
+
+/*Main Menu: Item TD*/
+.MainMenuItemTD
+{
+	padding:4px;
+	padding-left:6px;
+	padding-right:6px;
+}
+
+/*Main Menu: Item TD (Hovered)*/
+.MainMenuItemHoveredTD
+{
+	padding:3px;
+	padding-left:5px;
+	padding-right:5px;
+	border:solid 1px #0A246A;
+    background-color:#B6BDD2;
+}
+
+/*Main Menu: Item TD (Selected)*/
+.MainMenuItemSelectedTD
+{
+	padding:3px;
+	padding-left:5px;
+	padding-right:5px;
+	border:solid 1px #B6BDD2;
+    background-color:#E1E4EC;
+}
+
+
+/*=====================SubMenu=======================*/
+
+/*Submenu: DIV*/
+.SubMenuDIV
+{
+	padding:2px;
+	background-color:#F1F0EE;
+	border:solid 1px #666666;
+	cursor:default;
+}
+
+/*Submenu: Item TD*/
+.SubMenuItemTD
+{
+	padding:5px;
+}
+
+/*Submenu: Item TD (Hovered)*/
+.SubMenuItemHoveredTD
+{
+	padding:4px;
+	border:solid 1px #0A246A;
+	background-color:#B6BDD2;
+}
+
+/*Submenu: Item TD (Selected)*/
+.SubMenuItemSelectedTD
+{
+	padding:4px;
+	border:solid 1px #B6BDD2;
+	background-color:#E1E4EC;
+}
+
+
+/*=====================Additional classes=======================*/
+
+/*Separators: TD*/
+.SeparatorVerticalTD, .SeparatorHorizontalTD
+{
+	background-color:#DBD8D1;
+	padding:0px;
+}
+
+/*Tooltip: DIV*/
+.TooltipDIV
+{
+	font-family:Tahoma,Arial;
+	font-size:11px;
+	background-color:#FFFFE1;
+	border:solid 1px black;
+	padding:1px;
+	padding-left:3px;
+}
+
+/*Scroll Bar*/
+.ScrollBar
+{
+	scrollbar-base-color: #313421;
+	scrollbar-arrow-color: #000000;
+	scrollbar-3dlight-color: #959595;
+	scrollbar-darkshadow-color: #959595;
+	scrollbar-face-color: #F1F1F1;
+	scrollbar-highlight-color: #FFFFFF;
+	scrollbar-shadow-color: #F1F1F1;
+	scrollbar-track-color: #959595;
+}
+

@@ -1,0 +1,327 @@
+/*
+ CSS Style for APNSoft Menu.
+ Version: PreciseCustomization 4.4
+ Created: 11/12/2010
+ Updated: 10/03/2011
+ Copyright (C) APNSoft. All rights reserved.
+ http://www.apnsoft.com
+
+ Free for commercial and non-commercial use.
+ You can distribute and modify it freely.
+*/
+
+
+/*=====================Global=======================*/
+
+/*Icon: TD, Title: TD, Arrow: TD*/
+.IconTD, .TitleTD, .ArrowTD
+{
+	font-size:11px;
+	font-family:Tahoma,Verdana;
+	white-space:nowrap;
+}
+
+
+/*=====================Main Menu=======================*/
+
+/*Main Menu: DIV*/
+.MainMenuDIV
+{
+	padding:3px;
+	background-color:Silver;
+	border:outset 2px #efefef;
+	cursor:default;
+}
+
+/*Main Menu: Item TD*/
+.MainMenuItemTD
+{
+	padding:4px;
+	padding-left:6px;
+	padding-right:6px;
+}
+
+/*Main Menu: Item TD (Hovered)*/
+.MainMenuItemHoveredTD
+{
+	padding:3px;
+	padding-left:5px;
+	padding-right:5px;
+	border:solid 1px White;
+    border-right:solid 1px Gray;
+    border-bottom:solid 1px Gray;
+}
+
+/*Main Menu: Item TD (Selected)*/
+.MainMenuItemSelectedTD
+{
+	padding:3px;
+	padding-left:5px;
+	padding-right:5px;
+	border:solid 1px Gray;
+    border-right:solid 1px White;
+    border-bottom:solid 1px White;
+}
+
+
+/*=====================SubMenu=======================*/
+
+/*Submenu: DIV*/
+.SubMenuDIV
+{
+	padding:3px;
+	background-color:Silver;
+	border:outset 2px #efefef;
+	cursor:default;
+}
+
+/*Submenu: Item TD*/
+.SubMenuItemTD
+{
+	padding:4px;
+	padding-left:6px;
+	padding-right:6px;
+}
+
+/*Submenu: Item TD (Hovered)*/
+.SubMenuItemHoveredTD
+{
+	padding:4px;
+	padding-left:6px;
+	padding-right:6px;
+	background-color:white;
+}
+
+/*Submenu: Item TD (Selected)*/
+.SubMenuItemSelectedTD
+{
+	padding:4px;
+	padding-left:6px;
+	padding-right:6px;
+	background-color:#eaeaea;
+}
+
+
+/*=====================Additional classes=======================*/
+
+/*Separators: TD*/
+.SeparatorVerticalTD, .SeparatorHorizontalTD
+{
+	padding:0px;
+	border-left: solid 1px gray;
+	border-top: solid 1px gray;
+	background-color:#efefef;
+}
+
+/*Tooltip: DIV*/
+.TooltipDIV
+{
+	font-family:Tahoma,Arial;
+	font-size:11px;
+	background-color:#FFFFE1;
+	border:solid 1px black;
+	padding:1px;
+	padding-left:3px;
+}
+
+/*Scroll Bar*/
+.ScrollBar
+{
+	scrollbar-arrow-color:#3F3F3F;
+	scrollbar-base-color:silver;
+	scrollbar-shadow-color:silver;
+	scrollbar-darkshadow-color:gray;
+	scrollbar-highlight-color:silver;
+	scrollbar-3dlight-color:#efefef;
+	scrollbar-track-color:#D8D8D8;
+}
+
+
+/*=====================Classes for Precise Customization=======================*/
+
+/*Submenu: Header TD*/
+.HeaderTD
+{
+	padding:1px;
+	padding-left:6px;
+	padding-right:6px;
+	font-size:10px;
+	font-family:Verdana,Tahoma;
+	font-weight:bold;
+	color:Silver;
+	background-color:#959595;
+}
+
+
+/*Submenu: Item TD*/
+.ItemTD_i1_2
+{
+	padding:4px;
+	height:48px;
+}
+/*Submenu: Item TD (Hovered)*/
+.ItemHoveredTD_i1_2
+{
+	padding:4px;
+	background-color:white;
+	height:48px;
+}
+/*Submenu: Item TD (Selected)*/
+.ItemSelectedTD_i1_2
+{
+	padding:4px;
+	background-color:#eaeaea;
+	height:48px;
+}
+
+
+/*Submenu: Item TD*/
+.ItemTD_i1_3
+{
+	padding:4px;
+	background-color:Yellow;
+}
+/*Submenu: Item TD (Hovered)*/
+.ItemHoveredTD_i1_3
+{
+	padding:4px;
+	color:white;
+	background-color:Green;
+}
+/*Submenu: Item TD (Selected)*/
+.ItemSelectedTD_i1_3
+{
+	padding:4px;
+	background-color:#EAE75E;
+}
+
+
+/*Submenu: Item TD*/
+.ItemTD_i1_4
+{
+	padding:4px;
+	font-style:italic;
+}
+/*Submenu: Item TD (Hovered)*/
+.ItemHoveredTD_i1_4
+{
+	padding:4px;
+	font-style:italic;
+	background-color:white;
+}
+/*Submenu: Item TD (Selected)*/
+.ItemSelectedTD_i1_4
+{
+	padding:4px;
+	font-style:italic;
+	background-color:#eaeaea;
+}
+
+
+/*Submenu: Item TD*/
+.ItemTD_i1_5
+{
+	padding:4px;
+	background:silver url($SkinFolder$Background.jpg);
+}
+/*Submenu: Item TD (Hovered)*/
+.ItemHoveredTD_i1_5
+{
+	padding:4px;
+	color:White;
+	background:gray url($SkinFolder$ItemHoveredBackground.jpg);
+}
+/*Submenu: Item TD (Selected)*/
+.ItemSelectedTD_i1_5
+{
+	padding:4px;
+	background:gray url($SkinFolder$ItemSelectedBackground.jpg);
+}
+
+
+/*Submenu: Item TD (Normal, Hovered)*/
+.ItemTD_i1_6
+{
+	padding:0px;
+}
+
+/*Submenu: Item TD (Selected)*/
+.ItemSelectedTD_i1_6
+{
+	padding:0px;
+	
+	/*Transparency*/
+	filter:alpha(opacity=70);
+	-moz-opacity:0.7;
+	opacity:0.7;
+}	
+
+
+
+
+/*Submenu: DIV*/
+.SubMenuDIV_i2_2
+{
+	padding:3px;
+	background-color:Red;
+	border:outset 2px Red;
+	cursor:default;
+}
+
+/*Submenu: DIV*/
+.SubMenuDIV_i2_3
+{
+	padding:3px;
+	background-color:#56D856;
+	border:outset 2px #56D856;
+	cursor:default;
+}
+
+/*Submenu: DIV*/
+.SubMenuDIV_i2_4
+{
+	padding:3px;
+	background-color:#8C8CFF;
+	border:outset 2px #8C8CFF;
+	cursor:default;
+}
+
+
+
+
+/*Separator: TD*/
+.SeparatorTD_s1
+{
+	background-color:Red;
+	height:2px;
+	padding:0px;
+}
+
+/*Separator: TD*/
+.SeparatorTD_s2
+{
+	background-color:Green;
+	height:3px;
+	padding:0px;
+}
+
+/*Separator: TD*/
+.SeparatorTD_s3
+{
+	height:1px;
+	padding:0px;
+	border-left:solid 1px White;
+	border-top:solid 1px White;
+	background-color: Gray;
+}
+
+/*Separator: TD*/
+.SeparatorTD_s4
+{
+	height:1px;
+	padding:0px;
+	border-left:solid 1px Gray;
+	border-top:solid 1px Gray;
+	border-right:solid 1px White;
+	border-bottom:solid 1px White;
+}
